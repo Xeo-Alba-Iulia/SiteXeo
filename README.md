@@ -4,15 +4,16 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="80" height="80">
+    <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Team Xeo</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    The website of Team Xeo
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the code »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
