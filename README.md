@@ -2,38 +2,38 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://xeoalbaiulia.ro">
-    <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="100" height="100">
+<p align = "center">
+  <a href = "https://xeoalbaiulia.ro">
+    <img src = "Images/LogoSecondary.png" alt = "Xeo Logo" width = "100" height = "100">
   </a>
 
-  <h3 align="center">Team Xeo</h3>
+  <h3 align = "center">Team Xeo</h3>
 
-  <p align="center">
+  <p align = "center">
     <br />
     The website of Team Xeo
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the code »</strong></a>
+    <a href = "https://github.com/Xeo-Alba-Iulia/SiteXeo"><strong>Explore the code »</strong></a>
     <br />
     <br />
-    <a href="https://xeoalbaiulia.ro">View the website</a>
+    <a href = "https://xeoalbaiulia.ro">View the website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report a Bug</a>
+    <a href = "https://github.com/Xeo-Alba-Iulia/SiteXeo/issues">Report a Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request a Feature</a>
+    <a href = "https://github.com/Xeo-Alba-Iulia/SiteXeo/issues">Request a Feature</a>
   </p>
 </p>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details open="open">
+<details open = "open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href = "#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href = "#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
