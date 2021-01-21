@@ -1,4 +1,4 @@
-# SiteXeo
+# Site Xeo
 
 <!-- PROJECT LOGO -->
 <br />
@@ -7,7 +7,7 @@
     <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Team Xeo</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
