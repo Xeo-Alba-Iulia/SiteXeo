@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://xeoalbaiulia.ro">
     <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="100" height="100">
   </a>
 
@@ -16,11 +16,11 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the code »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://xeoalbaiulia.ro">View the website</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report a Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request a Feature</a>
   </p>
 </p>
 
