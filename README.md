@@ -37,7 +37,7 @@
       <a href = "#built-with">Built With</a>
     </li>
     <li>
-      <a href = "#built-with">Code explanation</a>
+      <a href = "#code-explanation">Code explanation</a>
     </li>
     <li>
       <a href="#contact">Contact</a>
@@ -67,11 +67,14 @@ In order to make a better responsive website I used some third party stuff:
 
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Some icon library](https://google.com)
+* [Font Awesome](https://fontawesome.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
 
 
-<!-- LICENSE -->
-## License
+<!-- Code explanation -->
+## Code explanation
 
 * npm
   ```sh
@@ -88,17 +91,3 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
