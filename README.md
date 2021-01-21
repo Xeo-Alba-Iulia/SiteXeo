@@ -63,10 +63,11 @@ The PR and Design departments listed a couple of features the website must have:
 <!-- BUILT WITH -->
 ## Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+In order to make a better responsive website I used some third party stuff:
+
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Some icon library](https://google.com)
 
 
 
