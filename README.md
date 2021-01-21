@@ -46,23 +46,21 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+In the 5th season (Ultimate goal) our team decided that we needed to have a website. After a few weeks of back and forth between the PR and the Design departments and the Programming Department we launched this website. 
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+The PR and Design departments listed a couple of features the website must have:
+* A simple minimalist design with a dark background and pastel colors.
+* Short about and team members section.
+* A blog feed with different events going on in our team inspired by Instagram.
+* Switching between showing the blog feed and our actual Instagram feed.
+* Short interactive Contact page.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
+<!-- BUILT WITH -->
 ## Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
