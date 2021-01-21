@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="Images/LogoMain.png" alt="Xeo Logo" width="80" height="80">
+    <img src="Images/LogoSecondary.png" alt="Xeo Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
