@@ -76,7 +76,7 @@ In order to make a better responsive website I used some third party stuff:
 <!-- Code explanation -->
 ## Code explanation
 
-* Images Folder
+  * Images Folder
   ```sh
   That is where all the images on the site are stored
   ```
