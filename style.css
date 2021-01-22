@@ -1,0 +1,121 @@
+/* Dumnezeu sa ma ajute */
+
+/* Globale */
+
+body
+{
+    background-color: #121212;
+}
+
+/******************************************************************************************************/
+
+/* Animations */
+
+.AnimationIncrease0
+{
+    transition: transform 0.2s;
+}
+
+.AnimationIncrease0:hover
+{
+    transform: scale(1.15);
+    opacity: 80%;
+}
+
+.AnimationIncrease1
+{
+    transition: transform 0.2s;
+}
+
+.AnimationIncrease1:hover
+{
+    transform: scale(1.25);
+    opacity: 80%;
+}
+
+.AnimationIncrease3
+{
+    transition: transform 0.2s;
+}
+
+.AnimationIncrease3:hover
+{
+    transform: scale(1.35);
+    opacity: 80%;
+}
+
+/******************************************************************************************************/
+
+/* Navbar */
+
+#Navbar
+{
+    background-color: #4b4b4b;
+}
+
+#NavbarMenuContainer
+{
+
+}
+
+#PhoneMenuToggle
+{
+
+}
+
+#PhoneMenuIcon
+{
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
