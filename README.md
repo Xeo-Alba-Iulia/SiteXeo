@@ -86,8 +86,6 @@ In order to make a better responsive website I used some third party stuff:
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Nandra Rares - [nandra._.rares](https://www.instagram.com/nandra._.rares/) - nandrarares16@gmail.com
 
 
