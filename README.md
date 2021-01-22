@@ -66,11 +66,8 @@ The PR and Design departments listed a couple of features the website must have:
 In order to make a better responsive website I used some third party stuff:
 
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 * [Font Awesome](https://fontawesome.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [JQuery](https://jquery.com)
 
 
 <!-- Code explanation -->
@@ -83,7 +80,7 @@ In order to make a better responsive website I used some third party stuff:
   
   * Third Party Folder
   ```sh
-  The location where all the Third Party folders files are stored, like Bootstrap
+  The location where all the Third Party folders files are stored, like Bootstrap and Font Awesome
   ```
   
   * index.html
@@ -91,12 +88,12 @@ In order to make a better responsive website I used some third party stuff:
   The location where all the HTML of the site is located
   ```
   
-  * Style.css
+  * style.css
   ```sh
   The file where all the styling of the site is located
   ```
 
-  * Script.js
+  * script.js
   ```sh
   The location where all scripts of the sites are located
   ```
