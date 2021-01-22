@@ -76,11 +76,30 @@ In order to make a better responsive website I used some third party stuff:
 <!-- Code explanation -->
 ## Code explanation
 
-* npm
+* Images Folder
   ```sh
-  npm install npm@latest -g
+  That is where all the images on the site are stored
+  ```
+  
+  * Third Party Folder
+  ```sh
+  The location where all the Third Party folders files are stored, like Bootstrap
+  ```
+  
+  * index.html
+  ```sh
+  The location where all the HTML of the site is located
+  ```
+  
+  * Style.css
+  ```sh
+  The file where all the styling of the site is located
   ```
 
+  * Script.js
+  ```sh
+  The location where all scripts of the sites are located
+  ```
 
 
 <!-- CONTACT -->
