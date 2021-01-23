@@ -1,47 +1,101 @@
 /* Dumnezeu sa ma ajute */
 
-/* Globale */
+/* Default Colors */
+:root 
+{
+    --BackgroundPrimary: #121212;
+    --BackgroundSecondary: #ffffff;
+    --AccentPrimary: #0084ff;  
+    --AccentSecondary: #000000;
+    --TextPrimary: #ffffff;
+    --TextSecondary: #000000;
+}
+
+/******************************************************************************************************/
+
+/* Global Elements */
 
 body
 {
     background-color: #121212;
 }
 
+i
+{
+    font-family: "FontAwesome";
+}
+
+/******************************************************************************************************/
+
+/* Classes */
+
+.Invisible
+{
+    visibility: hidden;
+}
+
+.ButtonBig, .ButtonMedium, .ButtonSmall
+{
+    background-color: var(--AccentPrimary);
+    border-radius: 50px;
+    border: 2px solid var(--AccentPrimary);
+    display: inline-block;
+    cursor: pointer;
+    color: var(--TextPrimary);
+    padding: 10px 60px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.ButtonMedium
+{
+    padding: 5px 30px;
+}
+
+.ButtonSmall
+{
+    padding: 2px 12px;
+}
+
+.ButtonBig:hover, .ButtonMedium:hover, .ButtonSmall:hover
+{
+    color: var(--TextPrimary);
+}
+
 /******************************************************************************************************/
 
 /* Animations */
 
-.AnimationIncrease0
+.AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3
 {
     transition: transform 0.2s;
+}
+
+.AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover
+{
+    opacity: 80%;
 }
 
 .AnimationIncrease0:hover
 {
-    transform: scale(1.15);
-    opacity: 80%;
+    transform: scale(1.05);
 }
 
-.AnimationIncrease1
-{
-    transition: transform 0.2s;
-}
 
 .AnimationIncrease1:hover
 {
-    transform: scale(1.25);
-    opacity: 80%;
+    transform: scale(1.15);
 }
 
-.AnimationIncrease3
+
+.AnimationIncrease2:hover
 {
-    transition: transform 0.2s;
+    transform: scale(1.25);
 }
 
 .AnimationIncrease3:hover
 {
     transform: scale(1.35);
-    opacity: 80%;
 }
 
 /******************************************************************************************************/
@@ -50,43 +104,69 @@ body
 
 #Navbar
 {
-    background-color: #4b4b4b;
+    -webkit-box-shadow: 0 1px 5px 1px black;
+    -moz-box-shadow: 0 1px 5px 1px black;
+    box-shadow: 0 1px 5px 1px black;
 }
 
-#NavbarMenuContainer
+#NavbarLogo
 {
-
-}
-
-#PhoneMenuToggle
-{
-
+    margin-left: 15px;
 }
 
 #PhoneMenuIcon
 {
-    color: white;
-    font-size: 40px;
+    color: var(--TextPrimary);
+    font-size: 30px;
 }
 
+.nav-item
+{
+    margin-right: 15px;
+}
 
+.nav-link
+{
+    color: var(--TextPrimary);
+    font-weight: 550;
+    display: block;  
+    background-image: linear-gradient(var(--TextPrimary), var(--TextPrimary));
+    background-position: 0% 77.5%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+}
+    
+.ActiveLink
+{
+    color: var(--AccentPrimary);
+    background-image: linear-gradient(var(--AccentPrimary), var(--AccentPrimary));
+}
 
+@media(min-width: 992px)
+{
+    .nav-link:hover, .nav-link:focus
+    {
+        background-size: 100% 2px;
+        color: var(--AccentPrimary);
+    }
 
+    .ActiveLink:hover, .ActiveLink:focus
+    {
+        color: var(--TextPrimary);
+    }
+}
 
+#ContactLink
+{
+    margin-top: 5px;
+    font-size: 15px;   
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#PhoneIcon
+{
+    font-size: 13px;
+}
 
 
 

@@ -16,42 +16,62 @@
     <title>Team Xeo</title>
     <link rel = "icon" type = "image/png" href = "Images/Icon.png">
 
-    <!-- Custom Fonts and icons -->
-    <link rel = "stylesheet" href = "">
-    <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
-
     <!-- Bootstrap -->
     <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
     <script src = "ThirdParty/Bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom Fonts and icons -->
+    <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
+    <link href = "ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
 
     <!-- Css -->
     <link href = "style.css" rel = "stylesheet">
 </head>
 
 <body>
+    
     <!-- Top Navigation Bar -->
-    <nav class = "navbar" id = "Navbar">
-        <div class = "container-fluid">
+    <nav class = "navbar navbar-expand-lg" id = "Navbar">
+        <div class = "container-fluid" id = "NavbarContainer">
+            
             <!-- Xeo Logo -->
             <a class = "navbar-brand" href = "#">
-                <img class = "AnimationIncrease0" id = "NavbarLogo" src = "Images/LogoMain.png" alt = "" height = "38" width = "38" loading = "lazy">
+                <img class = "AnimationIncrease1" id = "NavbarLogo" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
             </a>
-        
-            <!-- Navigation Bar Menu -->
-            <div id = "NavbarMenuContainer">
-                <!-- Phone Menu Toggle -->
-                <div id = "PhoneMenuToggle">
-                    <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
-                </div>
 
+            <!-- Navigation Bar Menu -->
+            <div id = "NavbarMenu">
+                <ul class = "navbar-nav NavbarMenuList">
+                    <li class = "nav-item">
+                        <a class = "nav-link ActiveLink" id = "HomeLink" href = "#">Home</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" id = "AboutUsLink" href = "#">About us</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" id = "OurTeamLink" href = "#">Our Team</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "nav-link" id = "BlogLink" href = "#">Blog</a>
+                    </li>
+
+                    <li class = "nav-item">
+                        <a class = "ButtonSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phone Menu Toggle -->
+            <div id = "NavbarMenuPhone">
+                <a class = "AnimationIncrease0">
+                    <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
+                </a>
             </div>
         </div>
     </nav>
-
-
-
-
-
 
     <!-- Javascript -->
     <script src = "script.js"></script>
