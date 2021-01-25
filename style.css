@@ -1,6 +1,7 @@
 /* Dumnezeu sa ma ajute */
 
 /* Default Colors */
+
 :root 
 {
     --BackgroundPrimary: #121212;
@@ -19,6 +20,7 @@
 body
 {
     background-image: var(--GradientPrimary);
+    font-family: Montserrat;
 }
 
 i
@@ -33,11 +35,24 @@ section
 
 /******************************************************************************************************/
 
-/* Multi Purpose Classes */
+/* Global Classes */
 
 .Invisible
 {
     visibility: hidden;
+}
+
+
+.TextBox
+{
+    border: 3px solid white;
+    border-radius: 12px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 5%;
+    color: white;
 }
 
 /******************************************************************************************************/
@@ -202,7 +217,8 @@ section
 {
     background-image: var(--GradientPrimary);
     margin-top: 4px;
-    font-size: 15px;   
+    font-size: 15px;
+    font-weight: 550;   
 }
 
 #PhoneIcon
