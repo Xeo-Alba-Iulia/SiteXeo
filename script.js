@@ -1,11 +1,10 @@
 /* Urmeaza JS Pajitean Doamne fereste */
 
-
 /* Window loaded main function */
 window.addEventListener('load', function() 
 {
     UpdateNavbarMenu();
-})
+});
 
 
 /* Window resizes main function */
@@ -13,7 +12,7 @@ window.addEventListener('resize', function()
 {
     UpdateNavbarMenu();
     
-})
+});
 
 // Switches between the phone and pc menus based on the width of the page
 CurrentMenu = "PC";
@@ -37,3 +36,11 @@ function UpdateNavbarMenu()
         NavbarContainer.innerHTML = NavbarContainerInner + PCMenu;
     }
 }
+
+/* Window scrolling main function */
+window.addEventListener("scroll", function()
+{
+    
+
+});
+

@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300.99923 606.66965"><defs><style>.cls-1,.cls-3{fill:#202020;}.cls-1,.cls-2{fill-rule:evenodd;}.cls-2{fill:#c4c4c4;opacity:0.15;isolation:isolate;}</style></defs><title>dd</title><g id="Ressource"><g id="wave_background" data-name="wave background"><g id="Group-4"><path id="Wave" class="cls-1" d="M0,0H1300c-.15625,99.06585-.15625,385.684,0,606.578-104.97872,3.74842-111.21375-108.92171-233.65957-65.85456C918.25532,592.80851,836.55319,582.59574,650,555.02128c-164.08409-24.25331-196.93617,69.44681-409.87234-9.19149C123.88425,502.90057,0,577.59032,0,577.59032,1,454.14663,1,177.191,0,0Z" transform="translate(0.49962)"/><path class="cls-2" d="M1300.49962,0H-.49962V495.30514c31.10639-62.49663,182.93617-47.17748,461.74469,18.823,87.71339,20.7638,109.0472-57.92633,188.25531-54.76644,83.90447,3.34724,142.06848,101.41282,335.62268,25.772a390.123,390.123,0,0,1,119.78162-26.55152c112.42493-6.38169,153.46657,40.9206,195.59494,55.546Z" transform="translate(0.49962)"/></g></g></g><rect class="cls-3" x="0.79633" y="520.87052" width="1299.70328" height="85.79913"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1301 606.7" style="enable-background:new 0 0 1301 606.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#121212;}
+</style>
+<g id="Ressource">
+	<g id="wave_background">
+		<g id="Group-4">
+			<path id="Wave" class="st0" d="M-4.5-530H1301c-0.2,99.1-0.2,385.7,0,606.6c-105.4,3.7-111.7-108.9-234.7-65.9
+				C917.6,62.8,835.5,52.6,648.3,25C483.5,0.7,450.5,94.4,236.6,15.8C119.9-27.1-4.5,47.6-4.5,47.6C-3.5-75.8-3.5-352.8-4.5-530z"/>
+		</g>
+	</g>
+</g>
+</svg>
