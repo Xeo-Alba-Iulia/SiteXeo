@@ -1,5 +1,5 @@
 {
-  "500px": {
+  "650px": {
     "changes": [
       "4.4",
       "5.0.0"
@@ -12,7 +12,7 @@
       "brands"
     ],
     "unicode": "f26e",
-    "label": "500px",
+    "label": "650px",
     "voted": false,
     "svg": {
       "brands": {

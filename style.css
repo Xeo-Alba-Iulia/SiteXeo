@@ -1,6 +1,6 @@
 /* Dumnezeu sa ma ajute */
 
-/* Default Colors */
+/*************************************** | Colors | ****************************************/
 
 :root 
 {
@@ -10,17 +10,30 @@
     --AccentSecondary: #000000;
     --TextPrimary: #ffffff;
     --TextSecondary: #000000;
-    --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));;
+    --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
 }
 
-/******************************************************************************************************/
+/*************************************** | Backgrounds | ****************************************/
 
-/* Global Elements */
+.BackgroundPrimary
+{
+    background-color: var(--BackgroundPrimary);
+}
+
+.BackgroundWave
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 125px;
+}
+
+/*************************************** | Global Elements | ****************************************/
 
 body
 {
     background-image: var(--GradientPrimary);
     font-family: Montserrat;
+    overflow-x: hidden;
 }
 
 i
@@ -28,34 +41,36 @@ i
     font-family: "FontAwesome";
 }
 
-section
-{
-    
-}
+/*************************************** | Global Classes | ****************************************/
 
-/******************************************************************************************************/
-
-/* Global Classes */
 
 .Invisible
 {
     visibility: hidden;
 }
 
+.SectionTitle
+{
+    color: var(--TextPrimary);
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-weight: 500;
+    font-size: 45px;
+}
 
 .TextBox
 {
-    border: 3px solid white;
+    border: 3px solid var(--BackgroundSecondary);
     border-radius: 12px;
     margin-left: 35%;
     margin-right: 35%;
     margin-top: 100px;
     margin-bottom: 200px;
     padding: 5%;
-    color: white;
+    color: var(--TextPrimary);
 }
 
-/******************************************************************************************************/
+/*************************************** | Custom Elements | ****************************************/
 
 /* Custom Buttons */
 
@@ -90,71 +105,74 @@ section
     color: var(--TextPrimary);
 }
 
-/******************************************************************************************************/
+/*************************************** | Animations | ****************************************/
 
-/* Backgrounds */
+/* Element size increase on Hover */
 
-.BackgroundPrimary
+@media(min-width: 800px)
 {
-    background-color: var(--BackgroundPrimary);
+    .AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3
+    {
+        transition: transform 0.2s;
+    }
+
+    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover
+    {
+        opacity: 80%;
+    }
+
+    .AnimationIncrease0:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .AnimationIncrease1:hover
+    {
+        transform: scale(1.1);
+    }
+
+    .AnimationIncrease2:hover
+    {
+        transform: scale(1.15);
+    }
+
+
+    .AnimationIncrease3:hover
+    {
+        transform: scale(1.25);
+    }
+
+    .AnimationIncrease4:hover
+    {
+        transform: scale(1.35);
+    }
 }
 
-.BackgroundWave
+/* Underline from left to right on Hover */
+
+@media(min-width: 800px)
 {
+  .AnimationUnderline
+  {
+    background-image: linear-gradient(var(--TextPrimary), var(--TextPrimary));
+    background-position: 0% 77.5%;
+    background-position-y: 35px;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 125px;
+    background-size: 0% 2px;
+    transition: background-size 0.5s;
+  }
+  
+  .AnimationUnderline:hover 
+  {
+    background-size: 100% 2px;
+    color: var(--TextPrimary);
+  }
 }
 
-/******************************************************************************************************/
-
-/* Animations */
-
-.AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3
-{
-    transition: transform 0.2s;
-}
-
-.AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover
-{
-    opacity: 80%;
-}
-
-.AnimationIncrease0:hover
-{
-    transform: scale(1.05);
-}
-
-.AnimationIncrease1:hover
-{
-    transform: scale(1.1);
-}
-
-.AnimationIncrease2:hover
-{
-    transform: scale(1.15);
-}
-
-
-.AnimationIncrease3:hover
-{
-    transform: scale(1.25);
-}
-
-.AnimationIncrease4:hover
-{
-    transform: scale(1.35);
-}
-
-/******************************************************************************************************/
-
-/* Navbar */
+/*************************************** | Navbar | ****************************************/
 
 #Navbar
 {
-    position: fixed;
-    top: 0;
-    width: 100%;
     height: 60px;
     background-color: var(--BackgroundPrimary);
     -webkit-box-shadow: 0 1px 5px 1px black;
@@ -162,10 +180,20 @@ section
     box-shadow: 0 1px 5px 1px black;
 }
 
-#NavbarLogo
+#NavbarMenu
 {
-    margin-left: 15px;
+    margin-left: auto;
 }
+
+@media (max-width: 767px) 
+{
+    .navbar-collapse
+    {
+        padding-bottom: 30px;
+        
+        background-color: var(--BackgroundPrimary);
+    }
+  }
 
 #PhoneMenuIcon
 {
@@ -175,7 +203,7 @@ section
 
 .nav-item
 {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .nav-link
@@ -183,12 +211,6 @@ section
     color: var(--TextPrimary);
     font-weight: 550;
     display: block;  
-    background-image: linear-gradient(var(--TextPrimary), var(--TextPrimary));
-    background-position: 0% 77.5%;
-    background-position-y: 35px;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size 0.5s;
 }
     
 .ActiveLink
@@ -197,20 +219,6 @@ section
     background: -webkit-linear-gradient(bottom right, rgb(223, 141, 255), rgb(113, 158, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-@media(min-width: 992px)
-{
-    .nav-link:hover, .nav-link:focus
-    {
-        background-size: 100% 2px;
-        color: var(--TextPrimary);
-    }
-
-    .ActiveLink:hover, .ActiveLink:focus
-    {
-        color: white;
-    }
 }
 
 #ContactLink
@@ -226,48 +234,25 @@ section
     font-size: 13px;
 }
 
-/* Home Section */
+/*************************************** | Home Section | ****************************************/
 
 #HomeSection
 {
     height: 85vh;
 }
 
+/*************************************** | About Section | ****************************************/
 
-
-
-
-/* aaaa */
-
-#Section2
+#AboutSection
 {
-    height: 950px;
+
 }
 
+/*************************************** | Sponsors Section | ****************************************/
 
+#SponsorsSection
+{
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*************************************** | Blog Section | ****************************************/

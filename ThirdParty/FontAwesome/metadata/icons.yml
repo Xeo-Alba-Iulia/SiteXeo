@@ -1,8 +1,8 @@
-500px:
+650px:
   changes:
     - '4.4'
     - 5.0.0
-  label: 500px
+  label: 650px
   search:
     terms: []
   styles:

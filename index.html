@@ -10,15 +10,22 @@
     <meta name = "keywords" content = "Xeo, Robotics, Robotics team, FTC, First Tech Challenge">
     <meta name = "author" content = "Team Xeo">
     <meta http-equiv = "Expires" content = "0">
+    <meta name = "theme-color" content = "#121212">
     <!-- <meta http-equiv = "Cache-Control" content = "cache"> -->
 
     <!-- Page Title and Favicon -->
     <title>Team Xeo</title>
-    <link rel = "icon" type = "image/png" href = "Images/Icon.png">
+    <link rel = "icon" type = "image/png" href = "Images/LogoMain.png">
+
+    <!-- JQuerry-->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+    <!-- Animation Library -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <!-- Bootstrap -->
     <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
-    <script src = "ThirdParty/Bootstrap/js/bootstrap.min.js"></script>
+    <script src = "ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
 
     <!-- Custom Fonts and icons -->
     <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
@@ -26,50 +33,46 @@
 
     <!-- Css -->
     <link href = "style.css" rel = "stylesheet">
+
+    <!-- Javascript -->
+    <script src = "script.js"></script>
+
 </head>
 
 <body>
-    
     <!-- Top Navigation Bar -->
-    <nav class = "navbar navbar-expand-lg" id = "Navbar">
-        <div class = "container-fluid" id = "NavbarContainer">
-            
-            <!-- Xeo Logo -->
-            <a class = "navbar-brand" href = "#">
-                <img class = "AnimationIncrease1" id = "NavbarLogo" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
-            </a>
+    <nav class = "navbar navbar-expand-md fixed-top" id = "Navbar">  
+        <!-- Xeo Logo -->
+        <a class = "navbar-brand" href = "#">
+            <img class = "AnimationIncrease1" id = "NavbarLogo" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
+        </a>
+    
+        <button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
+            <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
+        </button>
 
-            <!-- Navigation Bar Menu -->
-            <div id = "NavbarMenu">
-                <ul class = "navbar-nav NavbarMenuList">
-                    <li class = "nav-item">
-                        <a class = "nav-link ActiveLink" id = "HomeLink" href = "#">Home</a>
-                    </li>
+        <div class = "collapse navbar-collapse" id = "NavbarCollapse">           
+            <ul class = "navbar-nav" id = "NavbarMenu">
+                <li class = "nav-item">
+                    <a class = "nav-link ActiveLink" id = "HomeLink" href = "#">Home</a>
+                </li>
 
-                    <li class = "nav-item">
-                        <a class = "nav-link" id = "AboutUsLink" href = "#">About us</a>
-                    </li>
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "AboutUsLink" href = "#">About us</a>
+                </li>
 
-                    <li class = "nav-item">
-                        <a class = "nav-link" id = "OurTeamLink" href = "#">Our Team</a>
-                    </li>
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "SponsorsLink" href = "#">Sponsors</a>
+                </li>
 
-                    <li class = "nav-item">
-                        <a class = "nav-link" id = "BlogLink" href = "#">Blog</a>
-                    </li>
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "BlogLink" href = "#">Blog</a>
+                </li>
 
-                    <li class = "nav-item">
-                        <a class = "ButtonSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Phone Menu Toggle -->
-            <div id = "NavbarMenuPhone">
-                <a class = "AnimationIncrease0">
-                    <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
-                </a>
-            </div>
+                <li class = "nav-item">
+                    <a class = "ButtonSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -77,42 +80,36 @@
     <section class = "BackgroundPrimary" id = "HomeSection">
         <div class = "container-fluid">
             <div class = "row">
-                <div class = "col-12 text-center">
-                    <h1 style = "color: white; margin-top: 15%;">Team Xeo</h1>
-                </div>
+                
+                
             </div>
         </div>
     </section>
 
     <!-- Wave -->
-    <div class = "BackgroundWave" style = "background-image: url(Images/WaveBackground.svg);"></div>
+    <div class = "BackgroundWave" style = "background-image: url(Images/WaveBackgroundBottom.svg);"></div>
 
-    <section>
+    <section style = "height: 80vh;">
         <div class = "container-fluid">
-            <div class = "TextBox">
-                <h1>Team Xeo</h1>
-                <p>Acesta este un test pentru a determina daca totul merge bine</p>
-                <p>Acesta este un test este un test</p>
-            </div>
+        
         </div>
     </section>
 
     <!-- Wave -->
-    <div class = "BackgroundWave" style = "background-image: url(Images/WaveBackground2.svg);">
+    <div class = "BackgroundWave" style = "background-image: url(Images/WaveBackgroundTop.svg);">
 
     </div>
 
-    <!-- Home Section -->
-    <section class = "BackgroundPrimary" id = "HomeSection">
+    <!-- Sponsors Section -->
+    <section class = "BackgroundPrimary" id = "SponsorsSection">
         <div class = "container-fluid">
+            <div class = "row text-center">
+                <h1 class = "SectionTitle">Sponsors</h1>
+            </div>
             <div class = "row">
-                <div class = "col-12">
-
-                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Javascript -->
-    <script src = "script.js"></script>
 </body>
