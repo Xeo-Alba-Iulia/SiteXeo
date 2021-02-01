@@ -174,12 +174,9 @@ i
 #Navbar
 {
     height: 60px;
-    background-color: var(--BackgroundPrimary);
     -webkit-box-shadow: 0 1px 5px 1px black;
     -moz-box-shadow: 0 1px 5px 1px black;
     box-shadow: 0 1px 5px 1px black;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #NavbarMenu
@@ -192,9 +189,19 @@ i
     .navbar-collapse
     {
         padding-bottom: 30px;
-        
-        background-color: var(--BackgroundPrimary);
+        padding-left: 15px;
+        padding-top: 5px;
     }
+}
+
+#NavbarLogo
+{
+    padding-left: 15px;
+}
+
+#PhoneMenuToggler
+{
+    padding-right: 15px;
 }
 
 #PhoneMenuIcon
@@ -218,7 +225,7 @@ i
 .ActiveLink
 {
     font-weight: 600;
-    background: -webkit-linear-gradient(bottom right, rgb(223, 141, 255), rgb(113, 158, 255));
+    background: -webkit-linear-gradient(bottom right, rgb(223, 145, 253), rgb(119, 161, 252));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
