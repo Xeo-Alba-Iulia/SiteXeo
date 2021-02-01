@@ -65,9 +65,10 @@ The PR and Design departments listed a couple of features the website must have:
 
 In order to make a better responsive website I used some third party stuff:
 
+* [JQuery](https://jquery.com)
 * [Bootstrap](https://getbootstrap.com)
 * [Font Awesome](https://fontawesome.com)
-* [JQuery](https://jquery.com)
+* [TweenMax](https://greensock.com/)
 
 
 <!-- Code explanation -->
