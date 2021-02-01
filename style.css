@@ -13,20 +13,6 @@
     --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
 }
 
-/*************************************** | Backgrounds | ****************************************/
-
-.BackgroundPrimary
-{
-    background-color: var(--BackgroundPrimary);
-}
-
-.BackgroundWave
-{
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 125px;
-}
-
 /*************************************** | Global Elements | ****************************************/
 
 body
@@ -39,6 +25,20 @@ body
 i
 {
     font-family: "FontAwesome";
+}
+
+/*************************************** | Backgrounds | ****************************************/
+
+.BackgroundPrimary
+{
+    background-color: var(--BackgroundPrimary);
+}
+
+.BackgroundWave
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 125px;
 }
 
 /*************************************** | Global Classes | ****************************************/
