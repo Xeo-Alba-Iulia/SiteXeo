@@ -33,10 +33,6 @@ function ResizeSponsorsRobot(SiteWidth)
     SponsorsRobotContainer.style.width = SiteWidth + "px";
 }
 
-
-
-
-
 /*************************************** | JQuerry | ****************************************/
 
 $(function() 

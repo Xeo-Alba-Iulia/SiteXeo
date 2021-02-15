@@ -1,5 +1,81 @@
 /* Dumnezeu sa ma ajute */
 
+/*************************************** | Fonts | ****************************************/
+
+:root 
+{
+    --FontSizeTitleHuge: 55px;
+    --FontWeightTitleHuge: 550;
+
+    --FontSizeTitlePrimary: 45px;
+    --FontWeightTitlePrimary: 550;
+    
+    --FontSizeTitleSecondary: 35px;
+    --FontWeightTitleSecondary: 500;  
+
+    --FontSizeTextPrimary: 25px;
+    --FontWeightTextPrimary: 450;
+    
+    --FontSizeTextSecondary: 15px;
+    --FontWeightTextSecondary: 450;
+    
+    --FontSizeIconBig: 40px;
+    --FontSizeIconMedium: 30px;
+    --FontSizeIconSmall: 20px; 
+    --FontSizeIconTiny: 13px; 
+    
+    --FontSizeMenuItem: 16px;
+    --FontWeightMenuItem: 550;
+}
+
+@font-face 
+{
+    font-family: "Jeko";
+    src: url("Fonts/Jeko/Jeko.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Jeko/Jeko.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Jeko/Jeko.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Jeko/Jeko.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Jeko/Jeko.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Jeko/Jeko.svg#svgJeko") format("svg"); /* Legacy iOS */
+}
+
+@font-face 
+{
+    font-family: "Hodgeson";
+    src: url("Fonts/Hodgeson/Hodgeson.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Hodgeson/Hodgeson.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Hodgeson/Hodgeson.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Hodgeson/Hodgeson.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Hodgeson/Hodgeson.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Hodgeson/Hodgeson.svg#svgHodgeson") format("svg"); /* Legacy iOS */
+}
+
+@font-face 
+{
+    font-family: "Skizofrenia";
+    src: url("Fonts/Skizofrenia/Skizofrenia.eot"); /* IE9 Compat Modes */
+    src: url("Fonts/Skizofrenia/Skizofrenia.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+         url("Fonts/Skizofrenia/Skizofrenia.woff2") format("woff2"), /* Super Modern Browsers */
+         url("Fonts/Skizofrenia/Skizofrenia.woff") format("woff"), /* Pretty Modern Browsers */
+         url("Fonts/Skizofrenia/Skizofrenia.ttf")  format("truetype"), /* Safari, Android, iOS */
+         url("Fonts/Skizofrenia/Skizofrenia.svg#svgSkizofrenia") format("svg"); /* Legacy iOS */
+}
+
+.FontTitle
+{
+    font-family: "Jeko";
+}
+
+.FontTextMain
+{
+    font-family: "Hodgeson";
+}
+
+.FontTextSecondary
+{
+    font-family: "Skizofrenia";
+}
+
 /*************************************** | Colors | ****************************************/
 
 :root 
@@ -27,6 +103,30 @@ i
     font-family: "FontAwesome";
 }
 
+/*************************************** | Global Classes | ****************************************/
+
+
+.Invisible
+{
+    visibility: hidden;
+}
+
+.Title
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTitlePrimary);
+    font-size: var(--FontSizeTitlePrimary);
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.SubTitle
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTitleSecondary);
+    font-size: var(--FontSizeTitleSecondary);
+}
+
 /*************************************** | Backgrounds | ****************************************/
 
 .BackgroundPrimary
@@ -39,35 +139,6 @@ i
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 125px;
-}
-
-/*************************************** | Global Classes | ****************************************/
-
-
-.Invisible
-{
-    visibility: hidden;
-}
-
-.SectionTitle
-{
-    color: var(--TextPrimary);
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-weight: 500;
-    font-size: 45px;
-}
-
-.TextBox
-{
-    border: 3px solid var(--BackgroundSecondary);
-    border-radius: 12px;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding: 5%;
-    color: var(--TextPrimary);
 }
 
 /*************************************** | Custom Elements | ****************************************/
@@ -111,12 +182,12 @@ i
 
 @media(min-width: 800px)
 {
-    .AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3
+    .AnimationIncrease0, .AnimationIncrease1, .AnimationIncrease2, .AnimationIncrease3, .AnimationIncrease4
     {
         transition: transform 0.2s;
     }
 
-    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover
+    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover, .AnimationIncrease4
     {
         opacity: 80%;
     }
@@ -147,6 +218,47 @@ i
         transform: scale(1.35);
     }
 }
+
+/* Element fades in */
+
+.AnimationFadeIn0, .AnimationFadeIn1, .AnimationFadeIn2, .AnimationFadeIn3
+{
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.AnimationFadeIn0
+{
+    animation: AnimationFadeIn ease 1.5s;
+}
+
+.AnimationFadeIn1
+{
+    animation: AnimationFadeIn ease 2.5s;
+}
+
+.AnimationFadeIn2
+{
+    animation: AnimationFadeIn ease 3.5s;
+}
+
+.AnimationFadeIn3
+{
+    animation: AnimationFadeIn ease 4.5s;
+}
+
+@keyframes AnimationFadeIn 
+{ 
+    0% 
+    { 
+        opacity: 0; 
+    } 
+    
+    100% 
+    { 
+        opacity: 1; 
+    } 
+} 
 
 /* Underline from left to right on Hover */
 
@@ -207,7 +319,7 @@ i
 #PhoneMenuIcon
 {
     color: var(--TextPrimary);
-    font-size: 30px;
+    font-size: var(--FontSizeIconMedium);
 }
 
 .nav-item
@@ -218,13 +330,13 @@ i
 .nav-link
 {
     color: var(--TextPrimary);
-    font-weight: 550;
+    font-size: var(--FontSizeMenuItem);
+    font-weight: var(--FontWeightMenuItem); 
     display: block;  
 }
     
 .ActiveLink
 {
-    font-weight: 600;
     background: -webkit-linear-gradient(bottom right, rgb(223, 145, 253), rgb(119, 161, 252));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -233,14 +345,15 @@ i
 #ContactLink
 {
     background-image: var(--GradientPrimary);
+    font-size: var(--FontSizeMenuItem);
+    font-weight: var(--FontWeightMenuItem);  
     margin-top: 5px;
-    font-size: 15px;
-    font-weight: 550;   
+    margin-right: 10px; 
 }
 
 #PhoneIcon
 {
-    font-size: 13px;
+    font-size: var(--FontSizeIconTiny);
 }
 
 /*************************************** | Home Section | ****************************************/
@@ -248,6 +361,13 @@ i
 #HomeSection
 {
     height: 85vh;
+}
+
+#HomeTitle
+{
+    font-size: var(--FontSizeTitleHuge);
+    font-weight: var(--FontWeightTitleHuge);
+    margin-top: calc(25vh);
 }
 
 /*************************************** | About Section | ****************************************/
@@ -275,3 +395,15 @@ i
 
 
 
+
+
+
+
+
+
+#SponsorsBox0box:hover, #SponsorsBox1box:hover, #SponsorsBox2box:hover, #SponsorsBox3box:hover, 
+#SponsorsBox0boxmoveoff:hover, #SponsorsBox1boxmoveoff:hover, #SponsorsBox2boxmoveoff:hover, #SponsorsBox3boxmoveoff:hover,
+#SponsorsBox0boxrise:hover, #SponsorsBox1boxrise:hover, #SponsorsBox2boxrise:hover, #SponsorsBox3boxrise:hover
+{
+    opacity: 80%;    
+}
