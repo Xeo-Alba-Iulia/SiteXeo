@@ -61,11 +61,11 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "AboutUsLink" href = "#">About us</a>
+                    <a class = "nav-link AnimationUnderline" id = "AboutUsLink" href = "#AboutUsSectionStart">About us</a>
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "SponsorsLink" href = "#">Sponsors</a>
+                    <a class = "nav-link AnimationUnderline" id = "SponsorsLink" href = "#SponsorsSectionStart">Sponsors</a>
                 </li>
 
                 <li class = "nav-item">
@@ -82,35 +82,42 @@
     <!-- Home Section -->
     <section class = "BackgroundPrimary" id = "HomeSection">
         <div class = "container-fluid">
-            <div class = "row text-center">
+            <div class = "row text-center SectionTitleRow">
+                <p class = "MenuActivator" id = "HomeElement">aaaaaa</p>
                 <h1 class = "Title AnimationFadeIn1" id = "HomeTitle">Team Xeo</h1>
-            </div>
-            <div class = "row text-center">
                 <h1 class = "SubTitle AnimationFadeIn2" id = "HomeSubTitle">Dumnezeu sa binecuvanteze masinile sport japoneze 🚗</h1>
             </div>
         </div>
     </section>
 
     <!-- Wave -->
-    <div class = "BackgroundWave" style = "background-image: url(Images/WaveBottom.svg);"></div>
+    <div class = "BackgroundWave" id = "AboutUsSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
 
     <section style = "height: 80vh;">
         <div class = "container-fluid">
-        
+            <div class = "row text-center">
+                <h1 class = "Title" id = "AboutUsTitle" style = "margin-top: 12vh;">Text despre</h1>
+                <p class = "MenuActivator" id = "AboutUsElement">a</p>
+            </div>
+            <div class = "row text-center SectionTitleRow">
+                <h1 class = "SubTitle AnimationFadeIn2">Dumnezeu sa binecuvanteze masinile sport japoneze 🚗 pt 2</h1>
+                <h1 class = "SubTitle AnimationFadeIn2">Aici vine intr-o cutie alba textu btw sa nu muriti prosti</h1>
+                <h1 class = "SubTitle AnimationFadeIn2">BTW vine si un buton de read more care duce la pagina cu mai multe despre echipa</h1>
+            </div>
         </div>
     </section>
 
     <!-- Wave -->
-    <div class = "BackgroundWave" style = "background-image: url(Images/WaveTop.svg);"></div>
-
+    <div class = "BackgroundWave" id = "SponsorsSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
 
     <!-- Sponsors Section -->
     <section class = "BackgroundPrimary" id = "SponsorsSection">
         <div class = "container-fluid">
-            <div class = "row text-center">
-                <h1 class = "Title">Sponsors</h1>
+            <div class = "row text-center SectionTitleRow">
+                <h1 class = "Title" id = "SponsorsTitle" style = "margin-top: 7.5vh;">Sponsors</h1>
             </div>
             <div class = "row">
+                <p class = "MenuActivator" id = "SponsorsElement" style = "margin-top: 12.5vh;">a</p>
                 <div id = "SponsorsRobotContainer">
                     <svg id = "SponsorsRobotSVG" version = "1.1" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px" viewBox = "0 0 3000 400" enable-background = "new 0 0 652 400" xml:space = "preserve" preserveAspectRatio = "slice">
                         <defs>
@@ -265,6 +272,8 @@
                 </div>
             </div>
         </div>
+
+        <div style = "height: 25vh;"></div>
     </section>
 
 

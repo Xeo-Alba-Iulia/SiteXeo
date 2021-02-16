@@ -116,8 +116,8 @@ i
     color: var(--TextPrimary);
     font-weight: var(--FontWeightTitlePrimary);
     font-size: var(--FontSizeTitlePrimary);
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
 }
 
 .SubTitle
@@ -125,6 +125,20 @@ i
     color: var(--TextPrimary);
     font-weight: var(--FontWeightTitleSecondary);
     font-size: var(--FontSizeTitleSecondary);
+}
+
+.MenuActivator
+{
+    color: transparent;
+    font-size: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.SectionTitleRow
+{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 /*************************************** | Backgrounds | ****************************************/
@@ -367,7 +381,11 @@ i
 {
     font-size: var(--FontSizeTitleHuge);
     font-weight: var(--FontWeightTitleHuge);
-    margin-top: calc(25vh);
+}
+
+#HomeElement
+{
+    margin-top: calc(18vh);
 }
 
 /*************************************** | About Section | ****************************************/
