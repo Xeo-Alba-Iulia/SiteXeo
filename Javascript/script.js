@@ -1,25 +1,31 @@
+/*************************************** | Global Variables | ****************************************/
+
+var CurrentPage = String(location.href.split("/").slice(-1)).split("#")[0].replace(".html", ""); 
+
 /*************************************** | Window loaded event | ****************************************/
 
 window.addEventListener("load", function() 
 {
     ResizeSponsorsRobot(document.body.clientWidth);
-
+    VerticalAlignItems(document.body.clientHeight);
 });
 
 /*************************************** | Window resizes event | ****************************************/
 
 window.addEventListener("resize", function() 
 {
-    SiteWidth = document.body.clientWidth;
+    var SiteWidth = document.body.clientWidth;
+    var SiteHeight = document.body.clientHeight;
 
     ResizeSponsorsRobot(SiteWidth);
+    VerticalAlignItems(SiteHeight);
 });
 
 // Changes the width of the viewbox and the container of the Sponsors Robot Animation
 function ResizeSponsorsRobot(SiteWidth)
 {
-    SponsorsRobotSVG = document.getElementById("SponsorsRobotSVG");
-    SponsorsRobotContainer = document.getElementById("SponsorsRobotContainer");
+    var SponsorsRobotSVG = document.getElementById("SponsorsRobotSVG");
+    var SponsorsRobotContainer = document.getElementById("SponsorsRobotContainer");
 
     if(SiteWidth < 550)
     {
@@ -31,7 +37,24 @@ function ResizeSponsorsRobot(SiteWidth)
     }
 
     SponsorsRobotContainer.style.width = SiteWidth + "px";
+
 }
+
+// Changes the margin-top of all the elements with the "VerticalAlign" class to be in the middle of the parent element
+function VerticalAlignItems(SiteHeight)
+{
+    var ElementsToAlign = document.getElementsByClassName("VerticalAlign");
+
+    for(i = 0; i < ElementsToAlign.length; i++)
+    {
+        var ElementHeight = ElementsToAlign[i].clientHeight;
+        var ParentElementHeight = ElementsToAlign[i].parentElement.clientHeight;
+        
+        ElementsToAlign[i].style.marginTop = String(ParentElementHeight / 2 - ElementHeight / 2) + "px";
+    }
+
+}
+
 
 /*************************************** | Window scroll event | ****************************************/
 
@@ -40,31 +63,40 @@ var CurrentActiveMenu = "HomeLink";
 window.addEventListener("scroll", function() 
 {
     UpdateNavigationBarActive();
-
-
 });
 
 // Updates the active item in the Navigation bar depending on wich section of the site is on the screen
 function UpdateNavigationBarActive()
 {
-    var HomeElement = document.getElementById("HomeElement");
-    var AboutUsElement = document.getElementById("AboutUsElement");
-    var SponsorsElement = document.getElementById("SponsorsElement");
-    var BlogElement = document.getElementById("BlogElement");
-    var ContactElement = document.getElementById("ContactElement");
-    var ActiveElement = document.getElementById(CurrentActiveMenu);
+    if(CurrentPage == "index")
+    {
+        var HomeElement = document.getElementById("HomeElement");
+        var AboutElement = document.getElementById("AboutElement");
+        var SponsorsElement = document.getElementById("SponsorsElement");
+        var BlogElement = document.getElementById("BlogElement");
+        var ContactElement = document.getElementById("ContactElement");
+        var ActiveElement = document.getElementById(CurrentActiveMenu);
 
-    if(CurrentActiveMenu != "HomeLink" && IsVisible(HomeElement))
-    {
-        UpdateCurrentActive(ActiveElement, "HomeLink");
+        if(CurrentActiveMenu != "HomeLink" && IsVisible(HomeElement))
+        {
+            UpdateCurrentActive(ActiveElement, "HomeLink");
+        }
+        else if(CurrentActiveMenu != "AboutLink" && IsVisible(AboutElement))
+        {
+            UpdateCurrentActive(ActiveElement, "AboutLink");
+        }
+        else if(CurrentActiveMenu != "SponsorsLink" && IsVisible(SponsorsElement))
+        {
+            UpdateCurrentActive(ActiveElement, "SponsorsLink");
+        }
+        else if(CurrentActiveMenu != "BlogLink" && IsVisible(BlogElement))
+        {
+            UpdateCurrentActive(ActiveElement, "BlogLink");
+        }
     }
-    else if(CurrentActiveMenu != "AboutUsLink" && IsVisible(AboutUsElement))
+    else if(CurrentPage == "about")
     {
-        UpdateCurrentActive(ActiveElement, "AboutUsLink");
-    }
-    else if(CurrentActiveMenu != "SponsorsLink" && IsVisible(SponsorsElement))
-    {
-        UpdateCurrentActive(ActiveElement, "SponsorsLink");
+        
     }
 }
 

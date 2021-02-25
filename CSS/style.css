@@ -80,8 +80,9 @@
 
 :root 
 {
-    --BackgroundPrimary: #121212;
-    --BackgroundSecondary: #ffffff;
+    --BackgroundDarkPrimary: #121212;
+    --BackgroundDarkSecondary: #242424;
+    --BackgroundLightPrimary: #ffffff;
     --AccentPrimary: #0084ff;  
     --AccentSecondary: #000000;
     --TextPrimary: #ffffff;
@@ -105,6 +106,15 @@ i
 
 /*************************************** | Global Classes | ****************************************/
 
+.Debug
+{
+    border: 2px solid red;
+}
+
+.Debug2
+{
+    border: 1px solid transparent;
+}
 
 .Invisible
 {
@@ -141,11 +151,54 @@ i
     padding-right: 25px;
 }
 
+.ReadMoreIcon
+{
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.GoBackIcon
+{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+@media(min-width: 950px)
+{
+    .TextBox
+    {
+        border: 2px solid var(--BackgroundLightPrimary);
+        border-radius: 12px;
+        background: transparent;
+        padding: 40px;
+    }
+}
+
 /*************************************** | Backgrounds | ****************************************/
 
-.BackgroundPrimary
+.BackgroundDarkPrimary
 {
-    background-color: var(--BackgroundPrimary);
+    background-color: var(--BackgroundDarkPrimary);
+}
+
+.BackgroundDarkSecondary
+{
+    background-color: var(--BackgroundDarkSecondary);
+}
+
+.BackgroundLightPrimary
+{
+    background-color: var(--BackgroundLightPrimary);
+}
+
+.BackgroundImage
+{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .BackgroundWave
@@ -157,9 +210,9 @@ i
 
 /*************************************** | Custom Elements | ****************************************/
 
-/* Custom Buttons */
+/* Custom Rounded Buttons */
 
-.ButtonBig, .ButtonMedium, .ButtonSmall
+.ButtonRoundedBig, .ButtonRoundedMedium, .ButtonRoundedSmall
 {
     background-color: var(--AccentPrimary);
     border-radius: 50px;
@@ -167,25 +220,60 @@ i
     cursor: pointer;
     color: var(--TextPrimary);
     text-decoration: none;
-    transition: transform 0.2s;
 }
 
-.ButtonSmall
+.ButtonRoundedSmall
 {
     padding: 4px 10px;
 }
 
-.ButtonMedium
+.ButtonRoundedMedium
 {
     padding: 5px 30px;
 }
 
-.ButtonBig
+.ButtonRoundedBig
 {
     padding: 10px 60px;
 }
 
-.ButtonBig:hover, .ButtonMedium:hover, .ButtonSmall:hover
+.ButtonRoundedBig:hover, .ButtonRoundedMedium:hover, .ButtonRoundedSmall:hover
+{
+    color: var(--TextPrimary);
+}
+
+/* Custom Transparent Rectangle Buttons */
+
+.ButtonTransparentBig, .ButtonTransparentMedium, .ButtonTransparentSmall
+{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--TextPrimary);
+    text-decoration: none;
+}
+
+.ButtonTransparentSmall
+{
+    padding: 4px 10px;
+    padding-right: 20px;
+}
+
+.ButtonTransparentMedium
+{
+    padding: 7px 25px;
+    padding-right: 35px;
+}
+
+.ButtonTransparentBig
+{
+    padding: 10px 60px;
+    padding-right: 70px;
+}
+
+.ButtonTransparentBig:hover, .ButtonTransparentMedium:hover, .ButtonTransparentSmall:hover
 {
     color: var(--TextPrimary);
 }
@@ -392,7 +480,31 @@ i
 
 #AboutSection
 {
+    height: 80vh;
+}
 
+#AboutSubTitle
+{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#AboutTitleRow
+{
+    max-width: 750px;
+}
+
+@media(min-width: 750px)
+{
+    #AboutTitleRow
+    {
+        margin-left: calc(50% - 350px);
+    }
+}
+
+#AboutTitle
+{
+    margin-top: 0vh;
 }
 
 /*************************************** | Sponsors Section | ****************************************/
@@ -409,19 +521,73 @@ i
     height: 400px;
 }
 
-/*************************************** | Blog Section | ****************************************/
-
-
-
-
-
-
-
-
-
 #SponsorsBox0box:hover, #SponsorsBox1box:hover, #SponsorsBox2box:hover, #SponsorsBox3box:hover, 
 #SponsorsBox0boxmoveoff:hover, #SponsorsBox1boxmoveoff:hover, #SponsorsBox2boxmoveoff:hover, #SponsorsBox3boxmoveoff:hover,
 #SponsorsBox0boxrise:hover, #SponsorsBox1boxrise:hover, #SponsorsBox2boxrise:hover, #SponsorsBox3boxrise:hover
 {
     opacity: 80%;    
 }
+
+/*************************************** | Blog Section | ****************************************/
+
+.BlogPost
+{
+    margin-top: 50px;
+    width: 90%;
+    height: 1000px;
+    margin-left: 5%;
+}
+
+.BlogImage
+{
+    border-radius: 15px;
+    margin-left: calc(50% - 500px);
+    height: 550px;
+    max-width: 850px;
+}
+
+.BlogTextContainer
+{
+    padding: 50px;
+    border-radius: 15px;
+    margin-left: calc(50% - 115px);
+    margin-top: -225px;
+    height: 400px;
+    max-width: 614px;
+    box-shadow: -2px -5px 18px #000000;
+}
+
+@media(max-width: 1143px)
+{
+    .BlogImage
+    {
+        margin-left: 15%;
+        width: 70%;
+        height: 500px;
+        max-width: none;
+    }
+
+    .BlogTextContainer
+    {
+        margin-left: 20%;
+        margin-top: -150px;
+        max-width: none;
+        width: 60%;
+        height: 350px;
+        padding: 25px;
+    }
+}
+
+@media(max-width: 900px)
+{
+    .BlogImage
+    {
+        display: none;
+    }
+
+    .BlogTextContainer
+    {
+        display: none;
+    }
+}
+

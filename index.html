@@ -41,7 +41,7 @@
 
 <body>
     <!-- Top Navigation Bar -->
-    <nav class = "navbar navbar-expand-md fixed-top BackgroundPrimary" id = "Navbar">  
+    <nav class = "navbar navbar-expand-md fixed-top BackgroundDarkPrimary" id = "Navbar">  
 
         <!-- Xeo Logo -->
         <a class = "navbar-brand" href = "#" id = "NavbarLogo">
@@ -49,19 +49,19 @@
         </a>
     
         <!-- Phone Menu Toggle -->
-        <button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
+        <ButtonRounded type = "ButtonRounded" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
             <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
-        </button>
+        </ButtonRounded>
 
         <!-- Navigation Bar Menu -->
-        <div class = "collapse navbar-collapse BackgroundPrimary" id = "NavbarCollapse">           
+        <div class = "collapse navbar-collapse BackgroundDarkPrimary" id = "NavbarCollapse">           
             <ul class = "navbar-nav" id = "NavbarMenu">
                 <li class = "nav-item">
                     <a class = "nav-link ActiveLink" id = "HomeLink" href = "#">Home</a>
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "AboutUsLink" href = "#AboutUsSectionStart">About us</a>
+                    <a class = "nav-link AnimationUnderline" id = "AboutLink" href = "#AboutSectionStart">About us</a>
                 </li>
 
                 <li class = "nav-item">
@@ -69,21 +69,21 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "BlogLink" href = "#">Blog</a>
+                    <a class = "nav-link AnimationUnderline" id = "BlogLink" href = "#BlogSectionStart">Blog</a>
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "ButtonSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section class = "BackgroundPrimary" id = "HomeSection">
+    <section class = "BackgroundDarkPrimary" id = "HomeSection">
         <div class = "container-fluid">
             <div class = "row text-center SectionTitleRow">
-                <p class = "MenuActivator" id = "HomeElement">aaaaaa</p>
+                <p class = "MenuActivator" id = "HomeElement">a</p>
                 <h1 class = "Title AnimationFadeIn1" id = "HomeTitle">Team Xeo</h1>
                 <h1 class = "SubTitle AnimationFadeIn2" id = "HomeSubTitle">Dumnezeu sa binecuvanteze masinile sport japoneze 🚗</h1>
             </div>
@@ -91,18 +91,18 @@
     </section>
 
     <!-- Wave -->
-    <div class = "BackgroundWave" id = "AboutUsSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
+    <div class = "BackgroundWave" id = "AboutSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
 
-    <section style = "height: 80vh;">
-        <div class = "container-fluid">
-            <div class = "row text-center">
-                <h1 class = "Title" id = "AboutUsTitle" style = "margin-top: 12vh;">Text despre</h1>
-                <p class = "MenuActivator" id = "AboutUsElement">a</p>
-            </div>
-            <div class = "row text-center SectionTitleRow">
-                <h1 class = "SubTitle AnimationFadeIn2">Dumnezeu sa binecuvanteze masinile sport japoneze 🚗 pt 2</h1>
-                <h1 class = "SubTitle AnimationFadeIn2">Aici vine intr-o cutie alba textu btw sa nu muriti prosti</h1>
-                <h1 class = "SubTitle AnimationFadeIn2">BTW vine si un buton de read more care duce la pagina cu mai multe despre echipa</h1>
+    <!-- About Section -->
+    <section id = "AboutSection">
+        <div class = "container-fluid Debug2" style = "height: 67.5vh;">
+            <div class = "row text-center SectionTitleRow VerticalAlign TextBox" id = "AboutTitleRow">
+                <p class = "MenuActivator" id = "AboutElement">a</p>
+                <h1 class = "Title" id = "AboutTitle">Text despre</h1>
+                <h1 class = "SubTitle" id = "AboutSubTitle">Dumnezeu sa binecuvanteze masinile sport japoneze 🚗 pt 2</h1>
+                <div>
+                    <a class = "ButtonTransparentBig AnimationIncrease0" id = "AboutReadMore" href = "about.html">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -111,7 +111,7 @@
     <div class = "BackgroundWave" id = "SponsorsSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
 
     <!-- Sponsors Section -->
-    <section class = "BackgroundPrimary" id = "SponsorsSection">
+    <section class = "BackgroundDarkPrimary" id = "SponsorsSection">
         <div class = "container-fluid">
             <div class = "row text-center SectionTitleRow">
                 <h1 class = "Title" id = "SponsorsTitle" style = "margin-top: 7.5vh;">Sponsors</h1>
@@ -272,8 +272,28 @@
                 </div>
             </div>
         </div>
-
         <div style = "height: 25vh;"></div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class = "BackgroundDarkPrimary" id = "BlogSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow">
+                <p class = "MenuActivator">aaaaaa</p>
+                <h1 class = "Title" id = "BlogTitle">Blog</h1>
+            </div>
+            <div class = "row">
+                <div class = "BlogPost">
+                    <div class = "BackgroundImage BlogImage" style = "background-image: url(Images/img-06.jpg);"></div>
+
+                    <div class = "BlogTextContainer BackgroundDarkSecondary text-center">
+                        <h1 class = "SubTitle BlogTitle" id = "BlogElement">Titlu Postare Blog</h1>
+                        <p class = "" style = "color: white; padding-top: 50px; padding-bottom: 50px;">Acesta este un exemplu de preview pentru postarile de pe blog ul siteului si nu e absolut nimic de vazut pe aici e doar text filler de ce citesti chestia asta?</p>
+                        <a class = "ButtonTransparentMedium AnimationIncrease0" href = "#">Read more <i class = "fas fa-angle-right ReadMoreIcon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
