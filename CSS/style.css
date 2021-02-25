@@ -465,6 +465,19 @@ i
     height: 85vh;
 }
 
+#HomeTitleRow
+{
+    max-width: 1200px;
+}
+
+@media(min-width: 1200px)
+{
+    #HomeTitleRow
+    {
+        margin-left: calc(50% - 600px);
+    }
+}
+
 #HomeTitle
 {
     font-size: var(--FontSizeTitleHuge);
