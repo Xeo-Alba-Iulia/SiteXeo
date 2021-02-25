@@ -55,7 +55,6 @@ function VerticalAlignItems(SiteHeight)
 
 }
 
-
 /*************************************** | Window scroll event | ****************************************/
 
 var CurrentActiveMenu = "HomeLink";
@@ -96,7 +95,15 @@ function UpdateNavigationBarActive()
     }
     else if(CurrentPage == "about")
     {
-        
+        var HomeElement = document.getElementById("HomeElement");
+        var Achievements = document.getElementById("AchievementsElement");
+        var TeamElement = document.getElementById("TeamElement");
+        var ActiveElement = document.getElementById(CurrentActiveMenu);
+
+        if(CurrentActiveMenu != "HomeLink" && IsVisible(HomeElement))
+        {
+            UpdateCurrentActive(ActiveElement, "AboutLink");
+        }
     }
 }
 
