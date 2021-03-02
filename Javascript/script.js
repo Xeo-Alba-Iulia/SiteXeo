@@ -17,28 +17,8 @@ window.addEventListener("resize", function()
     var SiteWidth = document.body.clientWidth;
     var SiteHeight = document.body.clientHeight;
 
-    ResizeSponsorsRobot(SiteWidth);
     VerticalAlignItems(SiteHeight);
 });
-
-// Changes the width of the viewbox and the container of the Sponsors Robot Animation
-function ResizeSponsorsRobot(SiteWidth)
-{
-    var SponsorsRobotSVG = document.getElementById("SponsorsRobotSVG");
-    var SponsorsRobotContainer = document.getElementById("SponsorsRobotContainer");
-
-    if(SiteWidth < 550)
-    {
-        SponsorsRobotSVG.setAttribute("viewBox", "0 0 500 400");
-    }
-    else
-    {
-        SponsorsRobotSVG.setAttribute("viewBox", "0 0 " + SiteWidth + " 400");
-    }
-
-    SponsorsRobotContainer.style.width = SiteWidth + "px";
-
-}
 
 // Changes the margin-top of all the elements with the "VerticalAlign" class to be in the middle of the parent element
 function VerticalAlignItems(SiteHeight)
@@ -57,57 +37,12 @@ function VerticalAlignItems(SiteHeight)
 
 /*************************************** | Window scroll event | ****************************************/
 
-var CurrentActiveMenu = "HomeLink";
-
 window.addEventListener("scroll", function() 
 {
-    UpdateNavigationBarActive();
+    UpdateNavigationBarActive(); // different for every page => function is in each files .js
 });
 
-// Updates the active item in the Navigation bar depending on wich section of the site is on the screen
-function UpdateNavigationBarActive()
-{
-    if(CurrentPage == "index")
-    {
-        var HomeElement = document.getElementById("HomeElement");
-        var AboutElement = document.getElementById("AboutElement");
-        var SponsorsElement = document.getElementById("SponsorsElement");
-        var BlogElement = document.getElementById("BlogElement");
-        var ContactElement = document.getElementById("ContactElement");
-        var ActiveElement = document.getElementById(CurrentActiveMenu);
-
-        if(CurrentActiveMenu != "HomeLink" && IsVisible(HomeElement))
-        {
-            UpdateCurrentActive(ActiveElement, "HomeLink");
-        }
-        else if(CurrentActiveMenu != "AboutLink" && IsVisible(AboutElement))
-        {
-            UpdateCurrentActive(ActiveElement, "AboutLink");
-        }
-        else if(CurrentActiveMenu != "SponsorsLink" && IsVisible(SponsorsElement))
-        {
-            UpdateCurrentActive(ActiveElement, "SponsorsLink");
-        }
-        else if(CurrentActiveMenu != "BlogLink" && IsVisible(BlogElement))
-        {
-            UpdateCurrentActive(ActiveElement, "BlogLink");
-        }
-    }
-    else if(CurrentPage == "about")
-    {
-        var HomeElement = document.getElementById("HomeElement");
-        var Achievements = document.getElementById("AchievementsElement");
-        var TeamElement = document.getElementById("TeamElement");
-        var ActiveElement = document.getElementById(CurrentActiveMenu);
-
-        if(CurrentActiveMenu != "HomeLink" && IsVisible(HomeElement))
-        {
-            UpdateCurrentActive(ActiveElement, "AboutLink");
-        }
-    }
-}
-
-// Helper function for UpdateNavigationBarActive(). Returns true if an element is in the Virewport or false otherwise
+// Helper function for UpdateNavigationBarActive(). Returns true if an element is in the Viewport or false otherwise
 function IsVisible(Element) 
 {
 	var Distance = Element.getBoundingClientRect();
