@@ -55,18 +55,18 @@ In the 5th season (Ultimate goal) our team decided that we needed to have a webs
 The PR and Design departments listed a couple of features the website must have:
 * A simple minimalist design with a dark background and pastel colors.
 * Short about and team members section.
-* A blog feed with different events going on in our team inspired by Instagram.
+* A Sponsors Section
+* A blog feed with different events going on in our team + the teams Instagram account feed.
 * Switching between showing the blog feed and our actual Instagram feed.
 * Short interactive Contact page.
-
 
 <!-- BUILT WITH -->
 ## Built With
 
 In order to make a better responsive website I used some third party stuff:
 
-* [JQuery](https://jquery.com)
 * [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
 * [Font Awesome](https://fontawesome.com)
 * [TweenMax](https://greensock.com/)
 
@@ -84,25 +84,55 @@ In order to make a better responsive website I used some third party stuff:
   The location where all the Third Party folders files are stored, like Bootstrap and Font Awesome
   ```
   
+  * CSS Folder
+  ```sh
+  The location of all the .css files
+  ```
+  
+  * Javascript Folder
+  ```sh
+  The location of all the .js files
+  ```
+  
+  * Fonts Folder
+  ```sh
+  The location of all the fonts
+  ```
+  
   * index.html
   ```sh
-  The location where all the HTML of the site is located
+  The main Page
+  ```
+  
+  * AnyPage.html
+  ```sh
+  A secondary page
   ```
   
   * style.css
   ```sh
-  The file where all the styling of the site is located
+  The file where the base layer of styling of the site is located
+  ```
+  
+  * AnyPage.css
+  ```sh
+  The file where the second, page specific layer of styling of the page is located
   ```
 
   * script.js
   ```sh
-  The location where all scripts of the sites are located
+  The file where the base layer of scripts of the sites are located
   ```
 
+  * AnyPage.js
+  ```sh
+  The file where the second, page specific layer of scripts of the page is located
+  ```
 
 <!-- CONTACT -->
 ## Contact
 
+(If anything goes wrong and in the future somebody needs help with this code)
 Nandra Rares - [nandra._.rares](https://www.instagram.com/nandra._.rares/) - nandrarares16@gmail.com
 
 
