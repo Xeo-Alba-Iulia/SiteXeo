@@ -82,10 +82,12 @@ function BlogAnimation()
         {
             BlogElement.classList.add("AnimationFadeIn2");
 
-            if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
+            if(BlogElement.childNodes[1].childNodes[1] != null)
             {
-                console.log("asasa");
-                BlogElement.childNodes[1].childNodes[1].autoplay = "true";
+                if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
+                {
+                    BlogElement.childNodes[1].childNodes[1].autoplay = "true";
+                }
             }
 
             LastLoadedElement = i;
@@ -93,5 +95,3 @@ function BlogAnimation()
         }
     }
 }
-
-

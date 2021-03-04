@@ -112,6 +112,11 @@ body
     max-width: 850px;
 }
 
+.BlogImage:hover 
+{
+    opacity: 80%;
+}
+
 .BlogVideo
 {
     background-size: 100% 100%;
@@ -123,12 +128,12 @@ body
 
 .BlogImageRight, .BlogVideoRight
 {
-    margin-left: calc(50% - 500px);
+    margin-left: calc(50% - 525px);
 }
 
 .BlogImageLeft, .BlogVideoLeft
 {
-    margin-left: calc(50% - 350px);
+    margin-left: calc(50% - 325px);
 }
 
 .BlogTextContainer
@@ -137,23 +142,23 @@ body
     border-radius: 15px;
     margin-top: -225px;
     height: 400px;
-    max-width: 614px;
+    max-width: 600px;
     box-shadow: -2px -5px 18px #000000;
     position: absolute;
 }
 
 .BlogTextRight
 {
-    margin-left: calc(50% - 115px);
+    margin-left: calc(50% - 185px);
 }
 
 .BlogTextLeft
 {
-    margin-left: 350px;
+    margin-left: calc(50% - 630px);
 }
 
 
-@media(max-width: 1143px)
+@media(max-width: 1300px)
 {
     .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight
     {
