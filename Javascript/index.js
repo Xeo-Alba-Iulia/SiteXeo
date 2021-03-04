@@ -68,18 +68,26 @@ function UpdateNavigationBarActive()
 }
 
 // If the Blog element is visible it gives the AnimationFadeIn
-var BlogElements = document.getElementsByClassName("BlogAnimation");
+var BlogActivators = document.getElementsByClassName("BlogAnimation");
+var BlogElements = document.getElementsByClassName("BlogPost");
 var LastLoadedElement = 0;
 
 function BlogAnimation()
 {
-    for(i = LastLoadedElement; i < BlogElements.length; i++)
+    for(i = LastLoadedElement; i < BlogActivators.length; i++)
     {
         var BlogElement = BlogElements[i];
 
-        if(IsVisible(BlogElement))
+        if(IsVisible(BlogActivators[i]))
         {
-            BlogElement.parentElement.classList.add("AnimationFadeIn2");
+            BlogElement.classList.add("AnimationFadeIn2");
+
+            if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
+            {
+                console.log("asasa");
+                BlogElement.childNodes[1].childNodes[1].autoplay = "true";
+            }
+
             LastLoadedElement = i;
             break;
         }
