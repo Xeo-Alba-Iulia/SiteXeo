@@ -87,6 +87,7 @@ function BlogAnimation()
                 if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
                 {
                     BlogElement.childNodes[1].childNodes[1].autoplay = "true";
+                    BlogElement.childNodes[1].childNodes[1].play();
                 }
             }
 

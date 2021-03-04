@@ -39,9 +39,6 @@
     <li>
       <a href = "#code-explanation">Code explanation</a>
     </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
   </ol>
 </details>
 
@@ -128,11 +125,4 @@ In order to make a better responsive website I used some third party stuff:
   ```sh
   The file where the second, page specific layer of scripts of the page is located
   ```
-
-<!-- CONTACT -->
-## Contact
-
-(If anything goes wrong and in the future somebody needs help with this code)
-Nandra Rares - [nandra._.rares](https://www.instagram.com/nandra._.rares/) - nandrarares16@gmail.com
-
 
