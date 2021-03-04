@@ -39,7 +39,6 @@ function VerticalAlignItems(SiteHeight)
         
         ElementsToAlign[i].style.marginTop = String(ParentElementHeight / 2 - ElementHeight / 2) + "px";
     }
-
 }
 
 /*************************************** | Window scroll event | ****************************************/

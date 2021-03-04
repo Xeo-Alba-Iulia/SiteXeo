@@ -14,6 +14,11 @@ window.addEventListener("resize", function()
     ResizeSponsorsRobot(SiteWidth);
 });
 
+window.addEventListener("scroll", function() 
+{
+    BlogAnimation();
+});
+
 function ResizeSponsorsRobot(SiteWidth)
 {
     var SponsorsRobotSVG = document.getElementById("SponsorsRobotSVG");
@@ -30,7 +35,6 @@ function ResizeSponsorsRobot(SiteWidth)
 
     SponsorsRobotContainer.style.width = SiteWidth + "px";
 }
-
 
 // Updates the active item in the Navigation bar depending on wich section of the site is on the screen
 
@@ -62,3 +66,24 @@ function UpdateNavigationBarActive()
         UpdateCurrentActive(ActiveElement, "BlogLink");
     }   
 }
+
+// If the Blog element is visible it gives the AnimationFadeIn
+var BlogElements = document.getElementsByClassName("BlogAnimation");
+var LastLoadedElement = 0;
+
+function BlogAnimation()
+{
+    for(i = LastLoadedElement; i < BlogElements.length; i++)
+    {
+        var BlogElement = BlogElements[i];
+
+        if(IsVisible(BlogElement))
+        {
+            BlogElement.parentElement.classList.add("AnimationFadeIn2");
+            LastLoadedElement = i;
+            break;
+        }
+    }
+}
+
+

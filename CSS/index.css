@@ -5,6 +5,12 @@
                  - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
 */
 
+body 
+{
+    background-position: 0% 85vh;
+    background-size: 100% 150vh;
+}
+
 /*************************************** | Home Section | ****************************************/
 
 #HomeSection
@@ -100,22 +106,42 @@
 
 .BlogImage
 {
+    background-size: 100% 100%;
     border-radius: 15px;
-    margin-left: calc(50% - 500px);
     height: 550px;
     max-width: 850px;
+}
+
+.BlogImageRight
+{
+    margin-left: calc(50% - 500px);
+}
+
+.BlogImageLeft
+{
+    margin-left: calc(50% - 350px);
 }
 
 .BlogTextContainer
 {
     padding: 50px;
     border-radius: 15px;
-    margin-left: calc(50% - 115px);
     margin-top: -225px;
     height: 400px;
     max-width: 614px;
     box-shadow: -2px -5px 18px #000000;
 }
+
+.BlogTextRight
+{
+    margin-left: calc(50% - 115px);
+}
+
+.BlogTextLeft
+{
+    margin-left: 350px;
+}
+
 
 @media(max-width: 1143px)
 {
