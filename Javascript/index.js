@@ -71,15 +71,67 @@ function UpdateNavigationBarActive()
 var BlogActivators = document.getElementsByClassName("BlogAnimation");
 var BlogElements = document.getElementsByClassName("BlogPost");
 var LastLoadedElement = 0;
+var LastLoadedVideo = -1;
 
 function BlogAnimation()
 {
-    for(i = LastLoadedElement; i < BlogActivators.length; i++)
+    for(i = 0; i < BlogActivators.length; i++)
+    {
+        if(IsVisible(BlogActivators[i]))
+        {
+            LastLoadedElement = i;
+            console.log("Current element = ", LastLoadedElement);
+            var BlogElement = BlogElements[i];
+
+            // Check if fade animation was added
+            
+            if(BlogElement.classList.contains("AnimationFadeIn2") == false)
+            {
+                BlogElement.classList.add("AnimationFadeIn2");
+            }
+
+            // Check if a video needs to be paused
+
+            if(LastLoadedVideo != -1)
+            {
+                if(LastLoadedElement == LastLoadedVideo + 1 || LastLoadedElement == LastLoadedVideo - 1)
+                {
+                    BlogElements[LastLoadedVideo].childNodes[1].childNodes[1].pause();
+                    console.log("Paused");
+                }
+            }
+
+            // Check if blog post has video and start playing it
+
+            if(BlogElement.childNodes[1].childNodes[1] != null)
+            {
+                if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
+                {
+                    BlogElement.childNodes[1].childNodes[1].autoplay = "true";
+                    BlogElement.childNodes[1].childNodes[1].play();
+                    LastLoadedVideo = i;
+                }
+            }
+
+            
+
+        }
+    }
+}
+
+
+
+/*
+function BlogAnimation()
+{
+    for(i = 0; i < BlogActivators.length; i++)
     {
         var BlogElement = BlogElements[i];
 
         if(IsVisible(BlogActivators[i]))
         {
+            
+        }
             BlogElement.classList.add("AnimationFadeIn2");
 
             if(BlogElement.childNodes[1].childNodes[1] != null)
@@ -88,6 +140,20 @@ function BlogAnimation()
                 {
                     BlogElement.childNodes[1].childNodes[1].autoplay = "true";
                     BlogElement.childNodes[1].childNodes[1].play();
+                    LastStartedVideo = i;
+                }
+            }
+            
+            if(LastStartedVideo != -1)
+            {
+                console.log(LastStartedVideo);
+                console.log(i);
+                console.log("====");
+
+                if(i > LastStartedVideo + 1 || i < LastStartedVideo - 1)
+                {
+                    BlogElements[LastStartedVideo].childNodes[1].childNodes[1].pause();
+                    console.log("paused");
                 }
             }
 
@@ -96,3 +162,5 @@ function BlogAnimation()
         }
     }
 }
+
+*/

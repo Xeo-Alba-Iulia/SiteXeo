@@ -112,7 +112,7 @@ body
     max-width: 850px;
 }
 
-.BlogImage:hover 
+.BlogImage:hover, .BlogVideo:hover
 {
     opacity: 80%;
 }
@@ -141,7 +141,6 @@ body
     padding: 50px;
     border-radius: 15px;
     margin-top: -225px;
-    height: 400px;
     max-width: 600px;
     box-shadow: -2px -5px 18px #000000;
     position: absolute;
@@ -149,14 +148,29 @@ body
 
 .BlogTextRight
 {
-    margin-left: calc(50% - 185px);
+    margin-left: calc(50% - 175px);
 }
 
 .BlogTextLeft
 {
-    margin-left: calc(50% - 630px);
+    margin-left: calc(50% - 625px);
 }
 
+.BlogText 
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.BlogActivator
+{
+    margin-top: -100px;
+}
+
+#BlogTitle
+{
+    margin-bottom: 250px;
+}
 
 @media(max-width: 1300px)
 {
@@ -175,30 +189,152 @@ body
         margin-top: -150px;
         max-width: none;
         width: 60%;
-        height: 350px;
-        padding: 25px;
-    }
-
-    .BlogPost
-    {
-        margin-top: 0px;
     }
 }
 
 @media(max-width: 900px)
 {
-    .BlogImage
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
     {
-        display: none;
-    }
-    
-    .BlogVideo
-    {
-        display: none;
+        margin-left: 1%;
+        width: 98%;
+        height: 400px;
+        max-width: none;
     }
 
-    .BlogTextContainer
+    .Video
     {
-        display: none;
+        border-radius: 30px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: -120px;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .BlogText 
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .BlogActivator
+    {
+        margin-top: -100px;
+    }
+
+    #BlogTitle
+    {
+        margin-bottom: 225px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 400px;
+    }
+
+    .BlogText 
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+
+@media(max-width: 600px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 300px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: -50px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 15px;
+        padding-bottom: 25px;
+    }
+
+    .BlogActivator
+    {
+        margin-top: -250px;
+    }
+
+    #BlogTitle
+    {
+        margin-bottom: 350px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 250px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: 0px;
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .BlogText 
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 425px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 200px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        margin-top: 10px;
+    }
+
+    #BlogTitle
+    {
+        margin-top: -75px;
+    }
+}
+
+@media(max-width: 350px)
+{
+    .BlogImage, .BlogImageLeft, .BlogImageRight, .BlogVideo, .BlogVideoLeft, .BlogVideoRight, .Video
+    {
+        height: 160px;
+    }
+
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        padding: 15px;
+    }
+
+    .BlogText
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 300px)
+{
+    .BlogTextContainer, .BlogTextLeft, .BlogTextRight
+    {
+        padding: 12px;
     }
 }

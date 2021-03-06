@@ -18,7 +18,7 @@
     --FontSizeTitleSecondary: 35px;
     --FontWeightTitleSecondary: 500;  
 
-    --FontSizeTextPrimary: 25px;
+    --FontSizeTextPrimary: 20px;
     --FontWeightTextPrimary: 450;
     
     --FontSizeTextSecondary: 15px;
@@ -142,6 +142,20 @@ i
     font-size: var(--FontSizeTitleSecondary);
 }
 
+.TextPrimary
+{
+    color: var(--TextPrimary);
+    font-weight: var(--FontWeightTextPrimary);
+    font-size: var(--FontSizeTextPrimary);
+}
+
+.TextSecondary 
+{
+    color: var(--TextSecondary);
+    font-weight: var(--FontWeightTextSecondary);
+    font-size: var(--FontSizeTextSecondary);
+}
+
 .MenuActivator
 {
     color: transparent;
@@ -181,6 +195,11 @@ i
         background: transparent;
         padding: 40px;
     }
+}
+
+.Video 
+{
+    border-radius: 20px;
 }
 
 /*************************************** | Backgrounds | ****************************************/
