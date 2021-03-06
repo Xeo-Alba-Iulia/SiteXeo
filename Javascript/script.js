@@ -8,6 +8,7 @@
 /*************************************** | Global Variables | ****************************************/
 
 var CurrentPage = String(location.href.split("/").slice(-1)).split("#")[0].replace(".html", ""); 
+var SafariBrowser = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 && navigator.userAgent && navigator.userAgent.indexOf('CriOS') == -1 && navigator.userAgent.indexOf('FxiOS') == -1;
 
 /*************************************** | Window loaded event | ****************************************/
 
@@ -15,7 +16,23 @@ window.addEventListener("load", function()
 {
     ResizeSponsorsRobot(document.body.clientWidth);
     VerticalAlignItems(document.body.clientHeight);
+    SafariModifications();
 });
+
+function SafariModifications()
+{
+    if(SafariBrowser == true)
+    {
+        ReadMoreIcons = document.getElementsByClassName("ReadMoreIcon");
+
+        for(i = 0; i < ReadMoreIcons.length; i++)
+        {
+            ReadMoreIcon = ReadMoreIcons[i];
+            ReadMoreIcon.style.marginLeft = "55px";
+            ReadMoreIcon.style.marginTop = "-21px";
+        }
+    }
+}
 
 /*************************************** | Window resizes event | ****************************************/
 
