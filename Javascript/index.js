@@ -72,6 +72,8 @@ var BlogActivators = document.getElementsByClassName("BlogAnimation");
 var BlogElements = document.getElementsByClassName("BlogPost");
 var LastLoadedElement = 0;
 var LastLoadedVideo = -1;
+var FirstBlogElement = true;
+var FirstElement = 0;
 
 function BlogAnimation()
 {
@@ -80,12 +82,16 @@ function BlogAnimation()
         if(IsVisible(BlogActivators[i]))
         {
             LastLoadedElement = i;
-            console.log("Current element = ", LastLoadedElement);
             var BlogElement = BlogElements[i];
 
             // Check if fade animation was added
-            
-            if(BlogElement.classList.contains("AnimationFadeIn2") == false)
+            if(FirstBlogElement == true)
+            {
+                FirstElement = i;
+                FirstBlogElement = false;
+            }
+
+            if(BlogElement.classList.contains("AnimationFadeIn2") == false && i >= FirstElement)
             {
                 BlogElement.classList.add("AnimationFadeIn2");
             }
@@ -97,7 +103,6 @@ function BlogAnimation()
                 if(LastLoadedElement == LastLoadedVideo + 1 || LastLoadedElement == LastLoadedVideo - 1)
                 {
                     BlogElements[LastLoadedVideo].childNodes[1].childNodes[1].pause();
-                    console.log("Paused");
                 }
             }
 
@@ -113,54 +118,7 @@ function BlogAnimation()
                 }
             }
 
-            
-
-        }
-    }
-}
-
-
-
-/*
-function BlogAnimation()
-{
-    for(i = 0; i < BlogActivators.length; i++)
-    {
-        var BlogElement = BlogElements[i];
-
-        if(IsVisible(BlogActivators[i]))
-        {
-            
-        }
-            BlogElement.classList.add("AnimationFadeIn2");
-
-            if(BlogElement.childNodes[1].childNodes[1] != null)
-            {
-                if(BlogElement.childNodes[1].childNodes[1].tagName == "VIDEO")
-                {
-                    BlogElement.childNodes[1].childNodes[1].autoplay = "true";
-                    BlogElement.childNodes[1].childNodes[1].play();
-                    LastStartedVideo = i;
-                }
-            }
-            
-            if(LastStartedVideo != -1)
-            {
-                console.log(LastStartedVideo);
-                console.log(i);
-                console.log("====");
-
-                if(i > LastStartedVideo + 1 || i < LastStartedVideo - 1)
-                {
-                    BlogElements[LastStartedVideo].childNodes[1].childNodes[1].pause();
-                    console.log("paused");
-                }
-            }
-
-            LastLoadedElement = i;
             break;
         }
     }
 }
-
-*/

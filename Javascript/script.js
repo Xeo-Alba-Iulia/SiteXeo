@@ -45,7 +45,10 @@ function VerticalAlignItems(SiteHeight)
 
 window.addEventListener("scroll", function() 
 {
-    UpdateNavigationBarActive(); // different for every page => function is in each files .js
+    if(window.matchMedia("(max-width: 767px)").matches)
+    {
+        UpdateNavigationBarActive(); // different for every page => function is in each files .js
+    }
 });
 
 // Helper function for UpdateNavigationBarActive(). Returns true if an element is in the Viewport or false otherwise

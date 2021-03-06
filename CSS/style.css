@@ -93,6 +93,9 @@
     --TextPrimary: #ffffff;
     --TextSecondary: #000000;
     --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
+    --GradientPrimaryHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
+    --GradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
+    --GradientSecondaryHover: linear-gradient(to bottom left, rgb(221, 149, 250), rgb(87, 118, 255));
 }
 
 /*************************************** | Global Elements | ****************************************/
@@ -200,6 +203,19 @@ i
 .Video 
 {
     border-radius: 20px;
+}
+
+.GradientBorder
+{
+    padding: 2px;
+    background: var(--GradientSecondary);
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.GradientBorder:hover 
+{
+    background: var(--GradientSecondaryHover);
 }
 
 /*************************************** | Backgrounds | ****************************************/
@@ -479,7 +495,7 @@ i
     font-size: var(--FontSizeMenuItem);
     font-weight: var(--FontWeightMenuItem);  
     margin-top: 5px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 #PhoneIcon
