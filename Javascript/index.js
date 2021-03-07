@@ -42,6 +42,7 @@ var CurrentActiveMenu = "HomeLink";
 
 function UpdateNavigationBarActive()
 {
+    console.log("here");
     var HomeElement = document.getElementById("HomeElement");
     var AboutElement = document.getElementById("AboutElement");
     var SponsorsElement = document.getElementById("SponsorsElement");
@@ -89,10 +90,24 @@ function BlogAnimation()
             {
                 FirstElement = i;
                 FirstBlogElement = false;
+
+                console.log(FirstElement);
+
+                for(j = FirstElement; j > 0; j--)
+                {
+                    BlogElements[j].classList.remove("BlogDelete");
+                    BlogActivators[j].classList.remove("BlogDeleteMargin");
+                }
             }
 
-            if(BlogElement.classList.contains("AnimationFadeIn2") == false && i >= FirstElement)
+            if(BlogElement.classList.contains("AnimationFadeIn2") == false && i > FirstElement)
             {
+                if(i > 0)
+                {
+                    BlogElement.classList.remove("BlogDelete");
+                    BlogActivators[i].classList.remove("BlogDeleteMargin");
+                }
+
                 BlogElement.classList.add("AnimationFadeIn2");
             }
 

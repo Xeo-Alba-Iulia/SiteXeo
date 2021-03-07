@@ -96,6 +96,21 @@ body
 
 /*************************************** | Blog Section | ****************************************/
 
+#BlogContainer
+{
+    min-height: 200%;
+}
+
+.BlogDelete
+{
+    display: none;
+}
+
+.BlogDeleteMargin
+{
+    margin-bottom: 100vh;
+}
+
 .BlogReadMore
 {
     border: none;
@@ -286,12 +301,12 @@ video
 
     .BlogActivator
     {
-        margin-top: -250px;
+        margin-top: -275px;
     }
 
     #BlogTitle
     {
-        margin-bottom: 350px;
+        margin-bottom: 375px;
     }
 }
 

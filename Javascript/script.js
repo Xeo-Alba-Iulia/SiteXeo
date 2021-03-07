@@ -62,7 +62,7 @@ function VerticalAlignItems(SiteHeight)
 
 window.addEventListener("scroll", function() 
 {
-    if(window.matchMedia("(max-width: 767px)").matches)
+    if(window.matchMedia("(min-width: 767px)").matches || SafariBrowser == false)
     {
         UpdateNavigationBarActive(); // different for every page => function is in each files .js
     }
