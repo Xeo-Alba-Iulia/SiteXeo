@@ -5,6 +5,11 @@
                  - Page.js (code that is specific for that page and that page only wich is not included in the other pages)
 */
 
+window.addEventListener("load", function() 
+{
+    ResizeSponsorsRobot(document.body.clientWidth);
+});
+
 // Changes the width of the viewbox and the container of the Sponsors Robot Animation
 window.addEventListener("resize", function() 
 {
@@ -42,7 +47,6 @@ var CurrentActiveMenu = "HomeLink";
 
 function UpdateNavigationBarActive()
 {
-    console.log("here");
     var HomeElement = document.getElementById("HomeElement");
     var AboutElement = document.getElementById("AboutElement");
     var SponsorsElement = document.getElementById("SponsorsElement");
@@ -91,8 +95,6 @@ function BlogAnimation()
                 FirstElement = i;
                 FirstBlogElement = false;
 
-                console.log(FirstElement);
-
                 for(j = FirstElement; j > 0; j--)
                 {
                     BlogElements[j].classList.remove("BlogDelete");
@@ -137,3 +139,10 @@ function BlogAnimation()
         }
     }
 }
+
+/*************************************** | JQuerry | ****************************************/
+
+$(function()
+{
+    SponsorsRobotAnimation();
+})

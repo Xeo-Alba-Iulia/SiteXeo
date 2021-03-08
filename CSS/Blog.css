@@ -1,0 +1,87 @@
+/* 
+    This file contains all the locally used stuff, the second layer. 
+    
+    Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
+                 - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
+*/
+
+body 
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 0%;
+    background-size: 50% 100%;
+}
+
+#BlogSection
+{
+    background-image: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    background-size: 50% 100%;
+}
+
+.BlogContentCol
+{
+    padding: 0px;
+}
+
+.BlogImagesCol
+{
+    padding: 0px;
+}
+
+.BlogSectionContent
+{
+    background-color: #121212;
+}
+
+.BlogSectionImages
+{
+    width: 100%;
+}
+
+.BlogRowTitle
+{
+    padding-top: 100px;
+    margin-right: 0px;
+}
+
+.BlogSubTitle
+{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.BlogTextSection
+{
+    padding: 5vw;
+}
+
+.BlogText 
+{
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.BlogImage
+{
+    background-size: 100% 100%;
+    border-radius: 0px 15px 15px 0px;
+    height: 400px;
+    margin-top: 325px;
+    max-width: 70%;
+    margin-left: 0px;
+    box-shadow: 2px 5px 18px #000000;
+}
+
+@media(min-width: 800px)
+{
+    .BlogImage:hover
+    {
+        opacity: 90%;
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+    }
+}

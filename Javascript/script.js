@@ -14,7 +14,6 @@ var SafariBrowser = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &
 
 window.addEventListener("load", function() 
 {
-    ResizeSponsorsRobot(document.body.clientWidth);
     VerticalAlignItems(document.body.clientHeight);
     SafariModifications();
 });
@@ -96,7 +95,7 @@ function UpdateCurrentActive(ActiveElement, NewActiveElement)
 
 $(function()
 {
-    SponsorsRobotAnimation();
+    
 })
 
 
