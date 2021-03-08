@@ -1,0 +1,46 @@
+/* 
+    This file contains all the locally used stuff, the second layer. 
+    
+    Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
+                 - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
+*/
+
+body 
+{
+    background-position: 0% 85vh;
+    background-size: 100% 150vh;
+}
+
+#PhoneEmailSection
+{
+    height: 85vh;
+}
+
+#PhoneEmailRow
+{
+    max-width: 1200px;
+}
+
+@media(min-width: 1200px)
+{
+    #PhoneEmailRow
+    {
+        margin-left: calc(50% - 600px);
+    }
+}
+
+#PhoneEmailTitle
+{
+    font-size: var(--FontSizeTitleHuge);
+    font-weight: var(--FontWeightTitleHuge);
+}
+
+#PhoneEmailElement
+{
+    margin-top: 6vh;
+}
+
+#PhoneTitleRow, #EmailTitleRow
+{
+    margin-top: 10px;
+}
