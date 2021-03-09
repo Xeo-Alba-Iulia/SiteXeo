@@ -4,3 +4,9 @@
     Page.html -> - style.css (code used across all pages like the navbar or custom buttons and animations)
                  - Page.css (code that is specific for that page and that page only wich is not included in the other pages)
 */
+
+body 
+{
+    background-position: 0% 85vh;
+    background-size: 100% 300vh;
+}

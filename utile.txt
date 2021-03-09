@@ -14,7 +14,7 @@ Facbook token + APP ID separate cu "|" dupa cum cere papa Zucc in documentatie:
 Exemplu de request pt mine Doamne ajuta poate si vrea sa mearga :
 
 PageURL : https://www.instagram.com/teamxeo/
-Token + APP ID: 2a48ad5cad6c0b488af7e31fc4267580|282142349930508
+APP ID + Token: 282142349930508|2a48ad5cad6c0b488af7e31fc4267580
 
 curl -i -X GET \
-"https://graph.facebook.com/v10.0/oembed_page?url=https://www.instagram.com/teamxeo/&access_token=2a48ad5cad6c0b488af7e31fc4267580|282142349930508"
+"https://graph.facebook.com/v10.0/oembed_page?url=https://www.instagram.com/teamxeo/&access_token=282142349930508|2a48ad5cad6c0b488af7e31fc4267580"

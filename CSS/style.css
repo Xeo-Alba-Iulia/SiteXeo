@@ -91,7 +91,7 @@
     --AccentPrimary: #0084ff;  
     --AccentSecondary: #000000;
     --TextPrimary: #ffffff;
-    --TextSecondary: #000000;
+    --TextSecondary: #121212;
     --GradientPrimary: linear-gradient(to bottom right, rgb(209, 95, 253), rgb(61, 123, 255));
     --GradientPrimaryHover: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
     --GradientSecondary: linear-gradient(to bottom right, rgb(220, 132, 255), rgb(87, 140, 255));
@@ -193,8 +193,8 @@ i
 {
     .TextBox
     {
-        border: 2px solid var(--BackgroundLightPrimary);
-        border-radius: 12px;
+        border: 3px solid var(--BackgroundLightPrimary);
+        border-radius: 15px;
         background: transparent;
         padding: 40px;
     }
@@ -254,6 +254,11 @@ i
 .BackgroundLightPrimary
 {
     background-color: var(--BackgroundLightPrimary);
+}
+
+.BackgroundGradientPrimary
+{
+    background: var(--GradientPrimary);
 }
 
 .BackgroundImage

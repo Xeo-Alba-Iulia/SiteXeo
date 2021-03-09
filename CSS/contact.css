@@ -13,25 +13,17 @@ body
 
 #PhoneEmailSection
 {
-    height: 85vh;
+    height: 87.5vh;
 }
 
-#PhoneEmailRow
+#PhoneCol, #EmailCol
 {
-    max-width: 1200px;
+    margin-top: 15vh;
 }
 
-@media(min-width: 1200px)
+.PhoneEmailContentMargin
 {
-    #PhoneEmailRow
-    {
-        margin-left: calc(50% - 600px);
-    }
-}
-
-#PhoneEmailTitleRow
-{
-    padding-bottom: 50px;
+    margin-top: 25px;
 }
 
 #PhoneEmailTitle
@@ -52,6 +44,16 @@ body
     margin-top: 9px;
     font-size: 24px;
     transform: rotate(0deg);
+}
+
+#PhoneTitle
+{
+    margin-left: -10px;
+}
+
+#EmailTitle
+{
+    margin-left: -15px;
 }
 
 #PhoneIcon2:hover
@@ -112,6 +114,47 @@ body
     margin-top: 3px;
 }
 
+@media(max-width: 769px)
+{
+    #PhoneCol, #EmailCol
+    {
+        margin-top: 9vh;
+    }
+
+    #PhoneCol
+    {
+        margin-top: 4vh;
+    }
+
+    .PhoneEmailContentMargin
+    {
+        margin-top: 2.5vh;
+    }
+
+    #PhoneEmailElement
+    {
+        margin-top: 7vh;
+    }
+
+    @media(max-height: 725px)
+    {
+        #PhoneCol
+        {
+            margin-top: 1vh;
+        }
+
+        #EmailCol
+        {
+            margin-top: 5vh;
+        }
+
+        .PhoneEmailContentMargin
+        {
+            margin-top: 1.5vh;
+        }
+    }
+}
+
 #SocialMediaIcon
 {
     margin-left: 10px;
@@ -120,8 +163,12 @@ body
 #SocialMediaEmbedsRow
 {
     padding: 20px;
-    margin-top: 10vh;
     margin-bottom: 10vh;
+}
+
+.SocialMediaCol
+{
+    margin-top: 10vh;
 }
 
 .Embed
@@ -147,7 +194,18 @@ body
     height: 500px;
 }
 
+@media(max-width: 769px)
+{
+    #FacebookCol
+    {
+        margin-top: 40px;
+    }
 
+    #SocialMediaTitleRow
+    {
+        margin-top: -20px;
+    }
+}
 
 #LocationTitleRow
 {

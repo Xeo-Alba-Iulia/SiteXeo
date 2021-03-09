@@ -11,10 +11,14 @@
     <meta name = "author" content = "Team Xeo">
     <meta http-equiv = "Expires" content = "0">
     <meta name = "theme-color" content = "#121212">
+    <meta name = "msapplication-navbutton-color" content = "#121212">
+    <meta name = "apple-mobile-web-app-status-bar-style" content = "#121212">
+    <meta name = "apple-mobile-web-app-capable" content = "yes">
+    <meta name = "mobile-web-app-capable" content = "yes">
     <!-- <meta http-equiv = "Cache-Control" content = "cache"> -->
 
     <!-- Page Title and Favicon -->
-    <title>Team Xeo</title>
+    <title>Team Xeo - About</title>
     <link rel = "icon" type = "image/png" href = "Images/LogoMain.png">
 
     <!-- JQuerry-->
@@ -33,10 +37,11 @@
 
     <!-- CSS -->
     <link href = "CSS/style.css" rel = "stylesheet">
+    <link href = "CSS/about.css" rel = "stylesheet">
 
     <!-- Javascript -->
-    <script src = "Javascript/SponsorsRobotAnimation.js"></script>
     <script src = "Javascript/script.js"></script>
+    <script src = "Javascript/about.js"></script>
 </head>
 
 <body>
@@ -47,7 +52,7 @@
         <a class = "navbar-brand" href = "#" id = "NavbarLogo">
             <img class = "AnimationIncrease1" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
         </a>
-    
+
         <!-- Phone Menu Toggle -->
         <ButtonRounded type = "ButtonRounded" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
             <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
@@ -61,15 +66,15 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link ActiveLink" id = "AboutLink" href = "#">About us</a>
+                    <a class = "nav-link ActiveLink" id = "AboutElement" href = "#">About Xeo</a>
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "AchievementsLink" href = "#">Achievements</a>
+                    <a class = "nav-link AnimationUnderline" id = "AchievementsLink" href = "#AchievementsSectionStart">Achievements</a>
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link AnimationUnderline" id = "TeamLink" href = "#">Our team</a>
+                    <a class = "nav-link AnimationUnderline" id = "TeamLink" href = "#TeamSectionStart">Our Team</a>
                 </li>
 
                 <li class = "nav-item">
@@ -79,35 +84,21 @@
         </div>
     </nav>
 
-    <!-- Section -->
-    <section class = "BackgroundDarkPrimary" id = "HomeSection">
-        <div class = "container-fluid" style = "height: 85vh;">
-            <div class = "row text-center SectionTitleRow VerticalAlign" id = "HomeTitleRow" style = "height: 65vh;">
-                <p class = "MenuActivator" id = "HomeElement">a</p>
-                <h1 class = "Title AnimationFadeIn1" id = "HomeTitle" style = "margin-top: 25px;">About Team Xeo</h1>
-                <h1 class = "SubTitle AnimationFadeIn2" id = "HomeSubTitle">Text despre echipa si istoria ei si inca cateva chestii ca sa fie vreo 4 fraze</h1>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wave -->
-    <div class = "BackgroundWave" id = "AboutSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
-
-    <!-- Section -->
-    <section id = "AboutSection">
-        <div class = "container-fluid Debug2" style = "height: 67.5vh;">
-            
-        </div>
-    </section>
-
-    <!-- Wave -->
-    <div class = "BackgroundWave" id = "SponsorsSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
-
-    <!-- Section -->
-    <section class = "BackgroundDarkPrimary" id = "SponsorsSection">
+    <!-- About Section -->
+    <section class = "BackgroundDarkPrimary" id = "AboutSection">
         <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "AboutTitleRow">
+                <p class = "MenuActivator" id = "AboutElement">a</p>
+                <h1 class = "Title AnimationFadeIn1" id = "ContactsTitle">About Team Xeo</h1>
+            </div>
 
-            
-        <div style = "height: 25vh;"></div>
+            <div class = "row AboutRow">
+                
+            </div> 
+        </div>
     </section>
+
+
+
+
 </body>
