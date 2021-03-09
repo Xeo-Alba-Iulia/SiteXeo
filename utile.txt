@@ -1,1 +1,20 @@
-https://codepen.io/AlexFarminer/pen/jaRObg
+!!!!!!!!!!!!!!
+
+Ar fi extrem de recomandat ca si fisierul asta sa nu fie public sub nici o forma multumesc frumos
+
+(nu din motive de securitate ca oricum tokenurile is publice dar mai notez eu chestii pe aici)
+
+!!!!!!!!!!!!!!
+
+
+Facbook token + APP ID separate cu "|" dupa cum cere papa Zucc in documentatie:
+
+- 2a48ad5cad6c0b488af7e31fc4267580|282142349930508
+
+Exemplu de request pt mine Doamne ajuta poate si vrea sa mearga :
+
+PageURL : https://www.instagram.com/teamxeo/
+Token + APP ID: 2a48ad5cad6c0b488af7e31fc4267580|282142349930508
+
+curl -i -X GET \
+"https://graph.facebook.com/v10.0/oembed_page?url=https://www.instagram.com/teamxeo/&access_token=2a48ad5cad6c0b488af7e31fc4267580|282142349930508"

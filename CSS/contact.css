@@ -8,7 +8,7 @@
 body 
 {
     background-position: 0% 85vh;
-    background-size: 100% 150vh;
+    background-size: 100% 300vh;
 }
 
 #PhoneEmailSection
@@ -29,6 +29,11 @@ body
     }
 }
 
+#PhoneEmailTitleRow
+{
+    padding-bottom: 50px;
+}
+
 #PhoneEmailTitle
 {
     font-size: var(--FontSizeTitleHuge);
@@ -37,10 +42,190 @@ body
 
 #PhoneEmailElement
 {
-    margin-top: 6vh;
+    margin-top: 80px;
 }
 
-#PhoneTitleRow, #EmailTitleRow
+#PhoneIcon2
 {
-    margin-top: 10px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 24px;
+    transform: rotate(0deg);
 }
+
+#PhoneIcon2:hover
+{
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 33px;
+    -webkit-animation: spin 0.3s linear infinite;
+    -moz-animation: spin 0.3s linear infinite;
+    animation: spin 0.3s linear infinite;
+}
+
+@-moz-keyframes spin 
+{ 
+    50% 
+    { 
+        -moz-transform: rotate(-20deg); 
+    } 
+
+    100% 
+    { 
+        -moz-transform: rotate(0deg); 
+    } 
+}
+
+@-webkit-keyframes spin 
+{ 
+    50% 
+    { 
+        -moz-transform: rotate(-20deg); 
+    }
+
+    100% 
+    { 
+        -webkit-transform: rotate(0deg); 
+    } 
+}
+
+@keyframes spin 
+{ 
+    50% 
+    { 
+        -webkit-transform: rotate(-20deg); 
+        transform:rotate(-20deg); 
+    }
+    
+    100% 
+    { 
+        -moz-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+}
+
+#EmailIcon2
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+#SocialMediaIcon
+{
+    margin-left: 10px;
+}
+
+#SocialMediaEmbedsRow
+{
+    padding: 20px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.Embed
+{
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+}
+
+.SocialMediaEmbedContainer
+{
+    border-radius: 15px;
+}
+
+.SocialMediaTitle
+{
+    margin-bottom: 50px;
+}
+
+#FacebookEmbed
+{
+    width: 300px;
+    height: 500px;
+}
+
+
+
+#LocationTitleRow
+{
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+#LocationTextRow
+{
+    padding-bottom: 20vh;
+}
+
+#LocationElement
+{
+    margin-top: 2vh;
+}
+
+#MapContainer
+{
+    padding: 50px;
+}
+
+#Map
+{
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+#Map:hover 
+{
+    opacity: 100%;
+}
+
+@media(max-width: 1200px)
+{
+    #LocationTitleRow
+    {
+        padding-top: 0vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media(max-width: 800px)
+{
+    #Map
+    {
+        height: 425px;
+    }
+
+    #MapContainer
+    {
+        padding: 20px;
+    }
+}
+
+@media(max-width: 550px)
+{
+    #LocationTitleRow
+    {
+        margin-top: -6vh;
+        padding-bottom: 6vh;
+    }
+
+    #Map
+    {
+        height: 375px;
+    }
+}
+
+@media(max-width: 425px)
+{
+    #Map
+    {
+        height: 275px;
+    }
+}
+
