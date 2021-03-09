@@ -8,7 +8,12 @@
 body 
 {
     background-position: 0% 85vh;
-    background-size: 100% 300vh;
+    background-size: 100% 500vh;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 #PhoneEmailSection
@@ -186,6 +191,16 @@ body
 .SocialMediaTitle
 {
     margin-bottom: 50px;
+}
+
+#SocialMediaYoutubeRow
+{
+    margin-bottom: 15vh;
+}
+
+.YoutubeContainer
+{
+    width: 100%;
 }
 
 #FacebookEmbed

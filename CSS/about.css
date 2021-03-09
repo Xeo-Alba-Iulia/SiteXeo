@@ -8,7 +8,7 @@
 body 
 {
     background-position: 0% 85vh;
-    background-size: 100% 300vh;
+    background-size: 100% 700vh;
 }
 
 #AboutSection
@@ -33,6 +33,11 @@ body
     height: 60%
 }
 
+#AchievementsTitle
+{
+    margin-bottom: 15vh;
+}
+
 @media(max-width: 700px)
 {
     #AboutTitleRow
@@ -45,6 +50,13 @@ body
     #AboutSubTitle
     {
         font-size: 27px;
+    }
+
+    #AchievementsTitle
+    {
+        font-size: 35px;
+        margin-bottom: 12vh;
+        margin-top: -2vh;
     }
 
     @media(max-height: 725px)
@@ -61,5 +73,86 @@ body
     }
 }
 
+
+.AchievementsContainer
+{
+    width: 90%;
+    max-width: 450px;
+    height: 350px;
+}
+
+.AchievementsCard
+{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    box-shadow: 2px 5px 18px #000000;
+}
+
+.AchievementsCard:hover 
+{
+    opacity: 97%;
+}
+
+.AchievementTitle
+{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.SectionAchievementsRow
+{
+    margin-bottom: 2vh;
+}
+
+#AchievementsRow
+{
+    margin-bottom: 15vh;
+}
+
+
+@media(min-width: 1700px)
+{
+    #AchievementsContainer0
+    {
+
+    }
+
+    #AchievementsContainer1
+    {
+
+    }
+
+    #AchievementsContainer2
+    {
+
+    }
+
+    #AchievementsContainer3
+    {
+
+    }
+
+    #AchievementsContainer4
+    {
+        
+    }
+
+    #AchievementsContainer5
+    {
+        
+    }
+
+    #AchievementsContainer6
+    {
+        
+    }
+
+    #AchievementsContainer7
+    {
+        
+    }
+}
 
 
