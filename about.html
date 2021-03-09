@@ -66,7 +66,7 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "nav-link ActiveLink" id = "AboutElement" href = "#">About Xeo</a>
+                    <a class = "nav-link ActiveLink" id = "AboutLink" href = "#">About Xeo</a>
                 </li>
 
                 <li class = "nav-item">
@@ -78,7 +78,7 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "#">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "contact.html">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
                 </li>
             </ul>
         </div>
@@ -86,19 +86,41 @@
 
     <!-- About Section -->
     <section class = "BackgroundDarkPrimary" id = "AboutSection">
-        <div class = "container-fluid">
+        <div class = "container-fluid" style = "height: 100%">
             <div class = "row text-center SectionTitleRow" id = "AboutTitleRow">
                 <p class = "MenuActivator" id = "AboutElement">a</p>
-                <h1 class = "Title AnimationFadeIn1" id = "ContactsTitle">About Team Xeo</h1>
+                <div class = "VerticalAlign">
+                    <h1 class = "Title AnimationFadeIn1" id = "AboutTitle">About Xeo</h1>
+                    <h1 class = "SubTitle AnimationFadeIn2" id = "AboutSubTitle">Text despre team xeo nu prea mult nu prea putin in principiu daca e cam cat scriu eu acuma este perfect deoarece prea mult text plictiseste lumea si oricum suntem notorii si toti stiu cine suntem</h1>    
+                </div>
             </div>
-
-            <div class = "row AboutRow">
-                
-            </div> 
         </div>
     </section>
 
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "AboutSectionStart" style = "background-image: url(Images/WaveBottom.svg);"></div>
 
+    <!-- Achievements Section -->
+    <section id = "AchievementsSection" style = "height: 80vh;">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "AchievementsTitleRow">
+                <p class = "MenuActivator" id = "AchievementsElement">a</p>
+                <h1 class = "Title" id = "AchievementsTitle">Achievements <i class = "fas fa-trophy" id = "AchievementsIcon"></i></h1>
+            </div>
+        </div>
+    </section>
 
+    <!-- Wave -->
+    <div class = "BackgroundWave" id = "TeamSectionStart" style = "background-image: url(Images/WaveTop.svg);"></div>
+
+    <!-- Team Section -->
+    <section class = "BackgroundDarkPrimary" id = "TeamSection">
+        <div class = "container-fluid">
+            <div class = "row text-center SectionTitleRow" id = "TeamTitleRow">
+                <h1 class = "Title" id = "LocationTitle">Our Team <i class = "fas fa-users" id = "TeamIcon"></i></h1>
+                <p class = "MenuActivator" id = "TeamElement">a</p>
+            </div>
+        </div>
+    </section>
 
 </body>
