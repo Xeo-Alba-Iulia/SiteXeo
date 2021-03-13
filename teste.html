@@ -18,202 +18,82 @@
     <!-- <meta http-equiv = "Cache-Control" content = "cache"> -->
 
     <!-- Page Title and Favicon -->
-    <title>Team Xeo - Teste</title>
+    <title>Team Xeo - About</title>
     <link rel = "icon" type = "image/png" href = "Images/LogoMain.png">
 
-     <!-- JQuerry-->
-     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
- 
-     <!-- Bootstrap -->
-     <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
-     <script src = "ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
- 
-     <!-- Custom Fonts and icons -->
-     <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
-     <link href = "ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
+    <!-- JQuerry-->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
+    <!-- Animation Library -->
+    <script src = "ThirdParty/Animations/TweenMax.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href = "ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <script src = "ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
+
+    <!-- Custom Fonts and icons -->
+    <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
+    <link href = "ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
+
+    <!-- CSS -->
+    <link href = "CSS/style.css" rel = "stylesheet">
+    <link href = "CSS/about.css" rel = "stylesheet">
+
+    <!-- Javascript -->
+    <script src = "Javascript/script.js"></script>
+    <script src = "Javascript/about.js"></script>
 </head>
 
 <body>
-    
+    <!-- Top Navigation Bar -->
+    <nav class = "navbar navbar-expand-md fixed-top BackgroundDarkPrimary" id = "Navbar">  
 
-    <!-- About Section -->
-    <section id = "AboutSection" style = "height: 100%;">
+        <!-- Xeo Logo -->
+        <a class = "navbar-brand" href = "#" id = "NavbarLogo">
+            <img class = "AnimationIncrease1" src = "Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
+        </a>
+
+        <!-- Phone Menu Toggle -->
+        <ButtonRounded type = "ButtonRounded" class = "navbar-toggler" data-toggle = "collapse" data-target = "#NavbarCollapse" id = "PhoneMenuToggler">
+            <i class = "fas fa-bars" id = "PhoneMenuIcon"></i>
+        </ButtonRounded>
+
+        <!-- Navigation Bar Menu -->
+        <div class = "collapse navbar-collapse BackgroundDarkPrimary" id = "NavbarCollapse">           
+            <ul class = "navbar-nav" id = "NavbarMenu">
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "HomeLink" href = "index.html#AboutSectionStart"><i class = "fas fa-angle-left GoBackIcon"></i>Home</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link ActiveLink" id = "AboutLink" href = "#">About Xeo</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "AchievementsLink" href = "#AchievementsSectionStart">Achievements</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link AnimationUnderline" id = "TeamLink" href = "#TeamSectionStart">Our Team</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "contact.html">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Team Section -->
+    <section class = "BackgroundDarkPrimary" id = "TeamSection" style = "padding-bottom: 100vh;">
         <div class = "container-fluid">
-            <div id = "PCAbout">
-                <div class = "row Debug"> 
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerLeft BlogContainerBottom text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerRight BlogContainerTop text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerCenter BlogContainerMiddle text-center">
-    
-                        </div>
-                    </div>
-    
-                </div>
-                <div class = "row Debug"> 
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerRight BlogContainerBottom text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerCenter BlogContainerTop text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-4 Debug2">
-                        <div class = "BlogContainer BlogContainerLeft BlogContainerMiddle text-center">
-    
-                        </div>
-                    </div>
-                </div>
+            <div class = "row text-center SectionTitleRow" id = "TeamTitleRow">
+                <h1 class = "Title" id = "TeamTitle">Our Team <i class = "fas fa-users" id = "TeamIcon"></i></h1>
+                <p class = "MenuActivator" id = "TeamElement">a</p>
             </div>
 
-            <div id = "TabletAbout">
-                <div class = "row Debug"> 
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerLeft BlogContainerBottom text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerRight BlogContainerTop text-center">
-    
-                        </div>
-                    </div>    
-                </div>
-                <div class = "row Debug"> 
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerCenter BlogContainerMiddle text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerRight BlogContainerBottom text-center">
-    
-                        </div>
-                    </div>
-                </div>
-                <div class = "row Debug"> 
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerCenter BlogContainerTop text-center">
-    
-                        </div>
-                    </div>
-                    <div class = "col-6 Debug2">
-                        <div class = "BlogContainer BlogContainerLeft BlogContainerMiddle text-center">
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id = "PhoneAbout">
-                <div class = "row Debug"> 
-                    <div class = "col-12 Debug2">
-                        <div class = "BlogContainer BlogContainerLeft BlogContainerBottom text-center">
-    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-
+            <i class = "fas fa-laptop-code" style = "font-size: 50px; color: white;"></i>
         </div>
     </section>
 
-    
-
 </body>
-</html>
-
-<style>
-    .Debug
-    {
-        border: 2px solid red;
-    }
-
-    .Debug2
-    {
-        border: 2px solid green;
-    }
-    
-    #AboutSection
-    {
-        background-color: #121212;
-    }
-
-    @media(max-width: 1500px)
-    {
-        #PCAbout
-        {
-            display: none;
-        }
-    }   
-
-    @media(min-width: 1501px)
-    {
-        #TabletAbout
-        {
-            display: none;
-        }
-    }
-
-    .BlogContainer
-    {
-        background-color: #2c2c2c;
-        height: 350px;
-        width: 450px;
-        border-radius: 15px;
-    }
-
-    .BlogContainerLeft
-    {
-        margin-left: 0px;
-    }
-
-    .BlogContainerCenter
-    {
-        margin-left: calc(50% - 225px);
-    }
-
-    .BlogContainerRight
-    {
-        margin-left: calc(100% - 450px);
-    }
-
-    .BlogContainerTop
-    {
-        margin-top: 0px;
-    }
-
-    .BlogContainerMiddle
-    {
-        margin-top: calc(50% - 175px);
-    }
-
-    .BlogContainerBottom
-    {
-        margin-top: calc(100% - 350px);
-    }
-
-
-
-</style>
-
-
-<script>
-
-
-
-
-</script>
