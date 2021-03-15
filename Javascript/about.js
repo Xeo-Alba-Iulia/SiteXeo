@@ -27,4 +27,3 @@ function UpdateNavigationBarActive()
         UpdateCurrentActive(ActiveElement, "TeamLink");
     } 
 }
-
