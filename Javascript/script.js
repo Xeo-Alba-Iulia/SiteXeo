@@ -91,11 +91,4 @@ function UpdateCurrentActive(ActiveElement, NewActiveElement)
     CurrentActiveMenu = NewActiveElement;
 }
 
-/*************************************** | JQuerry | ****************************************/
-
-$(function()
-{
-    
-})
-
 

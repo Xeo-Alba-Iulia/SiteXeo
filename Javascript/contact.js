@@ -69,48 +69,12 @@ window.addEventListener("scroll", function()
     LoadIframes();
 });
 
-var FacebookLoaded = false;
-var DiscordLoaded = false;
-var YouTubeLoaded = false;
-var GoogleMapsLoaded = false;
-
 function LoadIframes()
 {
-    var FacebookEmbed = document.getElementById("FacebookEmbed");
-    var DiscordEmbed = document.getElementById("DiscordEmbed");
-    var YouTubeEmbed = document.getElementById("YouTubeEmbed");
-    var GoogleMapsEmbed = document.getElementById("Map");
-
-    var FacebookActivator = document.getElementById("FacebookActivator");
-    var DiscordActivator = document.getElementById("DiscordActivator");
-    var YouTubeActivator = document.getElementById("YouTubeActivator");
-    var GoogleMapsActivator = document.getElementById("GoogleMapsActivator");
-
-    if(IsVisible(FacebookActivator) && FacebookLoaded == false)
-    {
-        FacebookEmbed.src = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamXeoFTC%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=282142349930508";
-        FacebookEmbed.classList.add("AnimationFadeIn2");
-        FacebookLoaded = true;
-    }
-
-    if(IsVisible(DiscordActivator) && DiscordLoaded == false)
-    {
-        DiscordEmbed.src = "https://discord.com/widget?id=724282611165560965&theme=dark";
-        DiscordEmbed.classList.add("AnimationFadeIn2");
-        DiscordLoaded = true;
-    }
-
-    if(IsVisible(YouTubeActivator) && YouTubeLoaded == false)
-    {
-        YouTubeEmbed.src = "https://www.youtube.com/embed/Hy8iqii9ATs";
-        YouTubeEmbed.classList.add("AnimationFadeIn2");
-        YouTubeLoaded = true;
-    }
-
-    if(IsVisible(GoogleMapsActivator) && GoogleMapsLoaded == false)
-    {
-        GoogleMapsEmbed.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1384.1122123589803!2d23.562773457992414!3d46.066566068664045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea7dc7a06f241%3A0x4c54d423d78bd172!2zQ29sZWdpdWwgTmHIm2lvbmFsIEhvcmVhIENsb8iZY2EgyJlpIENyaciZYW4!5e0!3m2!1sro!2sro!4v1615225814275!5m2!1sro!2sro";
-        GoogleMapsEmbed.classList.add("AnimationFadeIn2");
-        GoogleMapsLoaded = true;
-    }    
+    
 }
+
+var FacebookSRC = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTeamXeoFTC%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=282142349930508";
+var DiscordSRC = "https://discord.com/widget?id=724282611165560965&theme=dark";
+var YouTubeSRC = "https://www.youtube.com/embed/Hy8iqii9ATs";
+var GoogleMapsSRC = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1384.1122123589803!2d23.562773457992414!3d46.066566068664045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474ea7dc7a06f241%3A0x4c54d423d78bd172!2zQ29sZWdpdWwgTmHIm2lvbmFsIEhvcmVhIENsb8iZY2EgyJlpIENyaciZYW4!5e0!3m2!1sro!2sro!4v1615225814275!5m2!1sro!2sro";
