@@ -48,9 +48,9 @@ function EmailHoverEffect(Action)
     }
 }
 
-function PhoneHoverEffect(Action)
+function PhoneHoverEffect(Action, Element)
 {
-    var PhoneIcon = document.getElementById("PhoneIcon2");
+    var PhoneIcon = document.getElementById("PhoneIcon" + String(Element));
 
     if(Action == "over")
     {

@@ -39,7 +39,8 @@ body
 
 #HomeElement
 {
-    margin-top: 18vh;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
 }
 
 /*************************************** | About Section | ****************************************/
@@ -64,7 +65,7 @@ body
 {
     #AboutTitleRow
     {
-        margin-left: calc(50% - 350px);
+        margin-left: calc(50% - 375px);
     }
 }
 

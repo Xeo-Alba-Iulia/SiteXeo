@@ -18,6 +18,9 @@
     --FontSizeTitleSecondary: 35px;
     --FontWeightTitleSecondary: 500;  
 
+    --FontSizeTitleSmall: 28px;
+    --FontWeightTitleSmall: 500;  
+
     --FontSizeTextPrimary: 20px;
     --FontWeightTextPrimary: 450;
     
@@ -360,7 +363,7 @@ i
         transition: transform 0.2s;
     }
 
-    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover, .AnimationIncrease4
+    .AnimationIncrease0:hover, .AnimationIncrease1:hover, .AnimationIncrease2:hover, .AnimationIncrease3:hover, .AnimationIncrease4:hover
     {
         opacity: 80%;
     }

@@ -164,8 +164,14 @@ body
 
 .AchievementsTitle
 {
-    margin-top: 25px;
+    font-size: 29px;
+    margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.AchievementsSubTitle
+{
+    font-size: var(--FontSizeTitleSmall);
 }
 
 @media(max-width: 1500px)
@@ -286,7 +292,6 @@ body
     border-radius: 15px;
     width: 100%;
     max-width: 350px;
-    height: 450px;
 }
 
 @media(max-width: 1001px)
@@ -306,9 +311,10 @@ body
     height: 200px;
 }
 
-.TeamContentContainer
+.TeamName
 {
-    padding-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .TeamDepartment
@@ -316,8 +322,18 @@ body
     padding: 25px;
 }
 
+.TwoDepartment
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
 .TeamSocialMediaRow
 {
+    margin-top: 20px;
     padding: 25px;
 }
 

@@ -59,6 +59,32 @@ a
     transform: rotate(0deg);
 }
 
+#PhoneIcon3
+{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 24px;
+    transform: rotate(0deg);
+}
+#PhoneIcon3:hover
+{
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 33px;
+    -webkit-animation: spin 0.3s linear infinite;
+    -moz-animation: spin 0.3s linear infinite;
+    animation: spin 0.3s linear infinite;
+}
+
+@media(max-width: 1000px)
+{
+    .PhoneEmailSubTitle
+    {
+        font-size: 22px;
+    }
+}
+
 #PhoneTitle
 {
     margin-left: -10px;
@@ -127,11 +153,11 @@ a
     margin-top: 3px;
 }
 
-@media(max-width: 769px)
+@media(max-width: 1000px)
 {
     #PhoneCol, #EmailCol
     {
-        margin-top: 9vh;
+        margin-top: 7.5vh;
     }
 
     #PhoneCol
@@ -141,30 +167,25 @@ a
 
     .PhoneEmailContentMargin
     {
-        margin-top: 2.5vh;
+        margin-top: 0vh;
     }
 
     #PhoneEmailElement
     {
-        margin-top: 7vh;
+        margin-top: 5vh;
     }
 
-    @media(max-height: 725px)
+    @media(max-height: 700px)
     {
-        #PhoneCol
+        #PhoneEmailSection
         {
-            margin-top: 1vh;
+            height: 92.5vh;
         }
 
-        #EmailCol
-        {
-            margin-top: 5vh;
-        }
-
-        .PhoneEmailContentMargin
-        {
-            margin-top: 1.5vh;
-        }
+        .PhoneEmailSubTitle
+    {
+        font-size: 20px;
+    }
     }
 }
 
@@ -233,12 +254,11 @@ a
 #LocationTitleRow
 {
     padding-top: 5vh;
-    padding-bottom: 2vh;
 }
 
 #LocationTextRow
 {
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 }
 
 #LocationElement
@@ -255,10 +275,16 @@ a
 {
     width: 100%;
     height: 500px;
-    max-width: 800px;
+    max-width: 900px;
     border: none;
     border-radius: 15px;
     transition: transform 0.2s;
+    margin-bottom: 10vh;
+}
+
+#Map:hover
+{
+    transform: scale(1.01);
 }
 
 #Map:hover 
