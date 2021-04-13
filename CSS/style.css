@@ -192,6 +192,12 @@ i
     font-size: 18px;
 }
 
+.Flag
+{
+    border-radius: 4px;
+    margin-top: -1px;
+}
+
 @media(min-width: 950px)
 {
     .TextBox
