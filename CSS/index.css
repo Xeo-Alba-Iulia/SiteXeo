@@ -37,6 +37,15 @@ body
     font-weight: var(--FontWeightTitleHuge);
 }
 
+@media(max-width: 900px)
+{
+    #HomeSubTitle
+    {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
 #HomeElement
 {
     margin-top: 15vh;
@@ -55,6 +64,15 @@ body
     padding-top: 20px;
     padding-bottom: 50px;
 }
+
+@media(max-width: 900px)
+{
+    #AboutSubTitle
+    {
+        font-size: 30px;
+    }
+}
+
 
 #AboutTitleRow
 {
