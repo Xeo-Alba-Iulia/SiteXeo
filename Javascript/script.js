@@ -16,6 +16,9 @@ window.addEventListener("load", function()
 {
     VerticalAlignItems(document.body.clientHeight);
     SafariModifications();
+
+    setTimeout(console.log.bind(console, "%cCauta mai bine 😉 %c ", "background: #ff4747;color: white;padding:75px;line-height: 100px; font-size:35px", ""));
+
 });
 
 function SafariModifications()
