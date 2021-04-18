@@ -127,6 +127,11 @@ i
     border: 1px solid transparent;
 }
 
+.OverflowXDisabled
+{
+    overflow-x: hidden !important;
+}
+
 .Invisible
 {
     visibility: hidden;
