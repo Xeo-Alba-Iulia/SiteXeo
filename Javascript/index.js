@@ -72,7 +72,33 @@ function UpdateNavigationBarActive()
     }   
 }
 
+// If the slider is changed update the blog content type
+var BlogContentType = "TeamEvents";
+
+function BlogContentChanged()
+{
+    if(document.getElementById("ContentType").checked == false)
+    {
+        BlogContentType = "TeamEvents";
+
+        document.getElementById("Tutorials").classList.add("ContentChooserOpacity");
+        document.getElementById("TeamEvents").classList.remove("ContentChooserOpacity");
+
+        document.getElementsByClassName("BlogPostsWrap")[0].style.display = "unset";
+    }
+    else 
+    {
+        BlogContentType = "Tutorials";
+
+        document.getElementById("TeamEvents").classList.add("ContentChooserOpacity");
+        document.getElementById("Tutorials").classList.remove("ContentChooserOpacity");
+
+        document.getElementsByClassName("BlogPostsWrap")[0].style.display = "none";
+    }
+}
+
 // If the Blog element is visible it gives the AnimationFadeIn
+
 var BlogActivators = document.getElementsByClassName("BlogAnimation");
 var BlogElements = document.getElementsByClassName("BlogPost");
 var LastLoadedElement = 0;

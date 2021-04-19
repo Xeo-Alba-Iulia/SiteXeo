@@ -115,6 +115,11 @@ body
 
 /*************************************** | Blog Section | ****************************************/
 
+#BlogSection
+{
+    min-height: 70vh;
+}
+
 #BlogContainer
 {
     min-height: 200%;
@@ -224,7 +229,12 @@ video
 
 #BlogTitle
 {
-    margin-bottom: 250px;
+    margin-bottom: 100px;
+}
+
+#ContentChooserRow
+{
+    margin-bottom: 200px;
 }
 
 @media(max-width: 1300px)
@@ -280,9 +290,9 @@ video
         margin-top: -100px;
     }
 
-    #BlogTitle
+    #ContentChooserRow
     {
-        margin-bottom: 225px;
+        margin-bottom: 175px;
     }
 }
 
@@ -323,9 +333,9 @@ video
         margin-top: -275px;
     }
 
-    #BlogTitle
+    #ContentChooserRow
     {
-        margin-bottom: 375px;
+        margin-bottom: 325px;
     }
 }
 
@@ -364,7 +374,7 @@ video
 
     #BlogTitle
     {
-        margin-top: -75px;
+        margin-top: -125px;
     }
 }
 
@@ -393,4 +403,36 @@ video
     {
         padding: 12px;
     }
+}
+
+@media(min-width: 649px)
+{
+    .PhoneContentChooser
+    {
+        display: none;
+    }
+
+    .ContentChooserText
+    {
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 650px)
+{
+    .PCContentChooser
+    {
+        display: none;
+    }
+
+
+    .ContentChooserText
+    {
+        font-size: 20px;
+    }
+}
+
+.ContentChooserOpacity
+{
+    opacity: 40%;
 }

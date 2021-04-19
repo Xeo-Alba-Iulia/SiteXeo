@@ -7,81 +7,176 @@
 
 body 
 {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100% 0%;
-    background-size: 50% 100%;
+    background-position: 0% 85vh;
+    background-size: 100% 100%;
 }
 
-#BlogSection
+#BlogSectionTitle
 {
-    background-image: linear-gradient(to bottom left, rgb(209, 95, 253), rgb(61, 123, 255));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0% 0%;
-    background-size: 50% 100%;
+    margin-top: 60px;
+    padding-bottom: 50px;
 }
 
-.BlogContentCol
+#GalleryContainer
 {
-    padding: 0px;
+    margin-top: 10vh;
+    margin-bottom: 17.5vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
 }
 
-.BlogImagesCol
+.ImageContainer
 {
-    padding: 0px;
+    max-width: 34vw;
 }
 
-.BlogSectionContent
+.ImageContainer:hover 
 {
-    background-color: #121212;
-}
-
-.BlogSectionImages
-{
-    width: 100%;
-}
-
-.BlogRowTitle
-{
-    padding-top: 100px;
-    margin-right: 0px;
-}
-
-.BlogSubTitle
-{
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.BlogTextSection
-{
-    padding: 5vw;
-}
-
-.BlogText 
-{
-    letter-spacing: 2px;
-    margin-top: 20px;
+    opacity: 97%;
 }
 
 .BlogImage
 {
-    background-size: 100% 100%;
-    border-radius: 0px 15px 15px 0px;
-    height: 400px;
-    margin-top: 325px;
-    max-width: 70%;
-    margin-left: 0px;
-    box-shadow: 2px 5px 18px #000000;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
 
-@media(min-width: 800px)
+.ImageContainerLeft
 {
-    .BlogImage:hover
+    margin-left: 0px;
+}
+
+.ImageContainerCenter
+{
+    margin-left: calc(50% - 17vw);
+}
+
+.ImageContainerRight
+{
+    margin-left: calc(100% - 34vw);
+}
+
+.ImageContainerTop
+{
+    margin-top: 0px;
+}
+
+.ImageContainerMiddle
+{
+    margin-top: calc(50% - 17vw);
+}
+
+.ImageContainerBottom
+{
+    margin-top: calc(100% - 34vw);
+}
+
+@media(min-width: 700px)
+{
+    .SmallScreenContainer
     {
-        opacity: 90%;
-        filter: blur(1px);
-        -webkit-filter: blur(1px);
+        display: none;
+    }
+
+    .BigScreenRow
+    {
+        margin-bottom: 10vh;
+    }
+}
+
+
+@media(max-width: 700px)
+{
+    #GalleryContainer
+    {
+        margin-top: 1vh;
+        margin-bottom: 7.5vh;
+    }
+
+    .BigScreenContainer
+    {
+        display: none;
+    }
+
+    .ImageContainer
+    {
+        max-width: 90vw;
+    }
+
+    .ImageContainerCenter
+    {
+        margin-left: calc(50% - 45vw);
+    }
+
+    .SmallScreenRow
+    {
+        margin-bottom: 10vh;
+    }
+}
+
+#BlogTitleRow
+{
+    margin-bottom: 7.5vh;
+}
+
+#BlogSectionText
+{
+    padding-top: 15vh;
+}
+
+.BlogText
+{
+    font-size: 26px;
+    line-height: 42px;
+}
+
+@media(max-width: 1500px)
+{
+    .BlogText
+    {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+
+@media(max-width: 1100px)
+{
+    #BlogSectionText
+    {
+        padding-top: 0vh;
+    }
+
+    .BlogText
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    @media(max-height: 650px)
+    {
+        .BlogText
+        {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media(max-width: 800px)
+{
+    .BlogText
+    {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    @media(max-height: 725px)
+    {
+        .BlogText
+        {
+            font-size: 16.5px;
+            line-height: 21px;
+        }
     }
 }

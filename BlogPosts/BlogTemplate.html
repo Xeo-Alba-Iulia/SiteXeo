@@ -19,29 +19,29 @@
 
     <!-- Page Title and Favicon -->
     <title>Blog template</title>
-    <link rel = "icon" type = "image/png" href = "../Images/LogoMain.png">
+    <link rel = "icon" type = "image/png" href = "../../Images/LogoMain.png">
 
     <!-- JQuerry-->
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
     <!-- Animation Library -->
-    <script src = "../ThirdParty/Animations/TweenMax.min.js"></script>
+    <script src = "../../ThirdParty/Animations/TweenMax.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href = "../ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
-    <script src = "../ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
+    <link href = "../../ThirdParty/Bootstrap/css/bootstrap.min.css" rel = "stylesheet" type = "text/css">
+    <script src = "../../ThirdParty/Bootstrap/js/bootstrapmin.js"></script>
 
     <!-- Custom Fonts and icons -->
     <link href = "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel = "stylesheet" type = "text/css">
-    <link href = "../ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
+    <link href = "../../ThirdParty/FontAwesome/css/all.min.css" rel = "stylesheet" type = "text/css">
 
     <!-- CSS -->
-    <link href = "../CSS/style.css" rel = "stylesheet">
-    <link href = "../CSS/Blog.css" rel = "stylesheet">
+    <link href = "../../CSS/style.css" rel = "stylesheet">
+    <link href = "../../CSS/Blog.css" rel = "stylesheet">
 
     <!-- Javascript -->
-    <script src = "../Javascript/script.js"></script>
-    <script src = "../Javascript/Blog.js"></script>
+    <script src = "../../Javascript/script.js"></script>
+    <script src = "../../Javascript/Blog.js"></script>
 </head>
 
 <body>
@@ -49,8 +49,8 @@
     <nav class = "navbar navbar-expand-md fixed-top BackgroundDarkPrimary" id = "Navbar">  
 
         <!-- Xeo Logo -->
-        <a class = "navbar-brand" href = "../index.html" id = "NavbarLogo">
-            <img class = "AnimationIncrease1" src = "../Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
+        <a class = "navbar-brand" href = "../../index.html" id = "NavbarLogo">
+            <img class = "AnimationIncrease1" src = "../../Images/LogoMain.png" alt = "" height = "40" width = "40" loading = "lazy">
         </a>
     
         <!-- Phone Menu Toggle -->
@@ -70,69 +70,72 @@
                 </li>
 
                 <li class = "nav-item">
-                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "../contact.html">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
+                    <a class = "ButtonRoundedSmall AnimationIncrease1" id = "ContactLink" href = "../../contact.html">Contact <i class = "fas fa-phone" id = "PhoneIcon"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Blog Section -->
-    <section id = "BlogSection">
-        <div class = "container-fluid" style = "padding: 0;">
-            <div class = "row">
-                <div class = "col-7 BlogContentCol">
-                    <div class = "BlogSectionContent">
-                        <div class = "row SectionTitleRow text-center BlogRowTitle">
-                            <h1 class = "Title AnimationFadeIn1 BlogTitle">Titlu Blog</h1>
-                        </div>
-    
-                        <div class = "row BlogTextSection">
-                            <h1 class = "SubTitle BlogSubTitle">Sectiunea 1</h1>
-    
-                            <p class = "TextPrimary BlogText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p class = "TextPrimary BlogText">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </div>
-                    </div>
-    
-                    <!-- Wave Line -->
-                    <div class = "WaveLineBottom" style = "background-image: url(../Images/WaveLineBottom.svg);"></div>
-                    
-                    <!-- Wave Line -->
-                    <div class = "WaveLineTop" style = "background-image: url(../Images/WaveLineTop.svg);"></div>
-    
-                    <div class = "BlogSectionContent">
-                        <div class = "row BlogTextSection">
-                            <h1 class = "SubTitle BlogSubTitle">Sectiunea 2</h1>
-    
-                            <p class = "TextPrimary BlogText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p class = "TextPrimary BlogText">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <section class = "BackgroundDarkPrimary" id = "BlogSectionTitle">
+        <div class = "container-fluid" style = "min-height: calc(85vh - 60px);">
+            <div class = "row text-center SectionTitleRow" id = "BlogTitleRow">
+                <h1 class = "Title AnimationFadeIn1" id = "HomeTitle">Title Blog</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <div class = "BackgroundWave" style = "background-image: url(../../Images/WaveBottom.svg);"></div>
+
+    <!-- Image Section -->
+    <section id = "BlogSectionImage">
+        <div class = "container-fluid" id = "GalleryContainer">
+            <div class = "BigScreenContainer">
+                <div class = "row BigScreenRow">
+                    <div class = "col-6">
+                        <div class = "ImageContainer ImageContainerCenter ImageContainerTop text-center AnimationIncrease0">
+                            <img class = "BlogImage" src = "../../Images/BlogPlaceholder1.png">
                         </div>
                     </div>
-    
-                    <!-- Wave Line -->
-                    <div class = "WaveLineBottom" style = "background-image: url(../Images/WaveLineBottom.svg);"></div>
-                    
-                    <!-- Wave Line -->
-                    <div class = "WaveLineTop" style = "background-image: url(../Images/WaveLineTop.svg);"></div>
-    
-                    <div class = "BlogSectionContent">
-                        <div class = "row BlogTextSection">
-                            <h1 class = "SubTitle BlogSubTitle">Sectiunea 3</h1>
-    
-                            <p class = "TextPrimary BlogText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <p class = "TextPrimary BlogText">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    <div class = "col-6">
+                        <div class = "ImageContainer ImageContainerRight ImageContainerMiddle text-center AnimationIncrease0">
+                            <img class = "BlogImage" src = "../../Images/BlogPlaceholder2.png">
                         </div>
                     </div>
                 </div>
-    
-                <div class = "col-5 BlogImagesCol">
-                    <div class = "BlogSectionImages">
-                        <div class = "BackgroundImage BlogImage" style = "background-image: url(../Images/BlogPlaceholder2.png);"></div>
+            </div>
+
+            <div class = "SmallScreenContainer">
+                <div class = "row SmallScreenRow">
+                    <div class = "col-12">
+                        <div class = "ImageContainer ImageContainerCenter text-center AnimationIncrease0">
+                            <img class = "BlogImage" src = "../../Images/BlogPlaceholder1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "row SmallScreenRow">
+                    <div class = "col-12">
+                        <div class = "ImageContainer ImageContainerCenter text-center AnimationIncrease0">
+                            <img class = "BlogImage" src = "../../Images/BlogPlaceholder2.png">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Wave -->
+    <div class = "BackgroundWave" style = "background-image: url(../../Images/WaveTop.svg);"></div>
 
+    <!-- Blog Section -->
+    <section class = "BackgroundDarkPrimary" id = "BlogSectionText">
+        <div class = "container-fluid" style = "min-height: 50vh">
+            <div class = "row text-center SectionTextRow" id = "BlogTextRow">
+                
+            </div>
+        </div>
+    </section>
 </body>
